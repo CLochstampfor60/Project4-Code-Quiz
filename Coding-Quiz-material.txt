@@ -20,32 +20,32 @@ List of Questions:
 CSS
 
 Q.1: The full form of CSS is:
-	option 0: Cascading Style Sheets
+	option 0: Cascading Style Sheets (*)
 	option 1: Coloured Special Sheets
 	option 2: Color and Style Sheets
 	option 3: None of the above
 
 Q.2: How can we change the background color of an element?
-	option 0: background-color
+	option 0: background-color (*)
 	option 1: color
 	option 2: Both A and B
 	option 3: None of the above
 
 Q.3: How can we change the text color of an element?
 	option 0: background-color
-	option 1: color
+	option 1: color (*)
 	option 2: Both A and B
 	option 3: None of the above
 
 Q.4: In how many ways can CSS be written in?
 	option 0: 1
 	option 1: 2
-	option 2: 3
+	option 2: 3 (*)
 	option 3: 4
 
 Q.5: What type of CSS is the following code snippet?
 	<h1 style="color:blue;">A Blue Heading</h1>
-	option 0: Inline
+	option 0: Inline (*)
 	option 1: Internal
 	option 2: External
 	option 3: None of the above
@@ -53,29 +53,29 @@ Q.5: What type of CSS is the following code snippet?
 Q.6: What type of CSS is generally recommended for designing large web pages?
 	option 0: Inline
 	option 1: Internal
-	option 2: External
+	option 2: External (*)
 	option 3: None of the above
 
 Q.7: Which HTML tag is used to declare internal CSS?
-	option 0: <style>
+	option 0: <style> (*)
 	option 1: <link>
 	option 2: <script>
 	option 3: None of the above 
 
 Q.8: How can we select an element with a specific ID in CSS?
-	option 0: #
+	option 0: # (*)
 	option 1: .
 	option 2: ^
 	option 3: None of the above
 
 Q.9: How can we select an element with a specific Class in CSS?
 	option 0: #
-	option 1: .
+	option 1: . (*)
 	option 2: ^
 	option 3: None of the above
 
 Q.10: How can we write comments in CSS?
-	option 0: /* */
+	option 0: /* */ (*)
 	option 1: //
 	option 2: #
 	option 3: All of the above
@@ -84,31 +84,31 @@ Q.11: In the below code snippet, in what order will the margins be added?
 	p {
   	   margin: 25px 50px 75px 100px;
 	 }
-	option 0: Top, Right, Bottom, Left
+	option 0: Top, Right, Bottom, Left (*)
 	option 1: Top, Left, Bottom, Right
 	option 2: Top, Bottom, Right, Left
 	option 3: Right, Left, Top, Bottom
 
 Q.12: Can negative values be allowed in padding property?
 	option 0: Yes
-	option 1: No
+	option 1: No (*)
 	option 2: Depends on property
 	option 3: None of the above
 
 Q.13: The CSS property used to specify the transparency of an element is?
-	option 0: opacity
+	option 0: opacity (*)
 	option 1: visibility
 	option 2: filter
 	option 3: None of the above
 
 Q.14: How can we specify the spacing between each letter in a text in CSS?
 	option 0: alpha-spacing
-	option 1: letter-spacing
+	option 1: letter-spacing (*)
 	option 2: character-spacing
 	option 3: None of the above
 
 Q.15: What is the correct syntax for referring an external CSS?
-	option 0: <link rel="stylesheet" type="text/css" href="style.css">
+	option 0: <link rel="stylesheet" type="text/css" href="style.css"> (*)
 	option 1: <style rel="stylesheet" type="text/css" href="style.css">
 	option 2: Both A and B
 	option 3: None of the above
@@ -117,10 +117,10 @@ Q.16: which of hte following are valid ways to represent a colour in CSS?
 	option 0: A valid color name
 	option 1: RGB values
 	option 2: HEX values
-	option 3: All of the above
+	option 3: All of the above (*)
 
 Q.17: Whic of the following is the correct way to select all h1 headers in a div element?
-	option 0: div h1
+	option 0: div h1 (*)
 	option 1: dov=j1
 	option 2: h1
 	option 3: None of the above
@@ -128,63 +128,75 @@ Q.17: Whic of the following is the correct way to select all h1 headers in a div
 Q.18: We can make rounded borders around elements using which CSS element?
 	option 0: border-collapse
 	option 1: border-round
-	option 2: border-radius
+	option 2: border-radius (*)
 	option 3: None of the above
+
 Q.19: How can we set the maximum width of the elements content box using CSS?
 	option 0: height property
 	option 1: max-height property
-	option 2: max-width property
+	option 2: max-width property (*)
 	option 3: None of the above
+
 Q.20: Which CSS property is used to specify different border sytles?
-	option 0: border-style
+	option 0: border-style (*)
 	option 1: border
 	option 2: Both A and B
 	option 3: None of the above
+
 Q.21: Which of the following are valid CSS position property values?
 	option 0: static
 	option 1: relative
 	option 2: fixed
-	option 3: All of the above
+	option 3: All of the above (*)
+
 Q.22: What does the inherit value for a property do?
-	option 0: Inherits the value of the parent element.
+	option 0: Inherits the value of the parent element. (*)
 	option 1: Invalid property name.
 	option 2: Changes the value of the parent element's property.
 	option 3: None of the above.
+
 Q.23: Which of the following property specifies the look and design of an outline?
-	option 0: outline-style
+	option 0: outline-style (*)
 	option 1: outline
 	option 2: outline-font
 	option 3: None of the above
+
 Q.24: Setting an inline-block in CSS requires which of hte following properties?
-	option 0: display
+	option 0: display (*)
 	option 1: color
 	option 2: block
 	option 3: None of the above
+
 Q.25: Which of the following CSS property is used for controlling the layout?
-	option 0: display
+	option 0: display (*)
 	option 1: color
 	option 2: text
 	option 3: None of the above
+
 Q.26: Which of the following CSS property specifies the origin of the background image?
-	option 0: background-origin
+	option 0: background-origin (*)
 	option 1: background-size
 	option 2: origin 
 	option 3: None of the above
+
 Q.27: How are custom fonts defined using CSS?
-	option 0: @font-face rule
+	option 0: @font-face rule (*)
 	option 1: Custom fonts cannot be defined
 	option 2: src tags
 	option 3: None of the above
+
 Q.28: Which of the following are parts of the CSS box model?
 	option 0: Margins
 	option 1: Borders
 	option 2: Padding
-	option 3: All of the above
+	option 3: All of the above (*)
+
 Q.29: Which of the following components of the CSS box model are transparent?
 	option 0: Padding
 	option 1: Margin
-	option 2: Both A and B
+	option 2: Both A and B (*)
 	option 3: Content
+
 Q.30: What will be the width of the div element given below?
 	div {
   	  width: 310px;
@@ -194,108 +206,128 @@ Q.30: What will be the width of the div element given below?
 	}
 	option 0: 310px
 	option 1: 350px
-	option 2: 360px
+	option 2: 360px (*)
 	option 3: None of the above
+
 Q.31: Which of the following can be achieved with CSS lists?
 	option 0: Set different list item markers for ordered lists
 	option 1: Set different list item markers for unordered lists
 	option 2: Set an image as the list item marker
-	option 3: All of the above
+	option 3: All of the above (*)
+
 Q.32: Which of the following CSS property specifies the type of list item marker?
 	option 0: list
-	option 1: list-style-type
+	option 1: list-style-type (*)
 	option 2: ul
 	option 3: ol
+
 Q.33: What value should be passed to the width parameter if we want an element, say a table, to span the entire width of the screen?
-	option 0: 100%
+	option 0: 100% (*)
 	option 1: 50%
 	option 2: 0%
 	option 3: None of the above
+
 Q.34: Which of the following properties is used to align text in CSS?
-	option 0: text align 
+	option 0: text align  (*)
 	option 1: text-alignment
 	option 2: text
 	option 3: text-position
+
 Q.35: Which of the following CSS properties specifies the stack order of elements?
-	option 0: z-index
+	option 0: z-index (*)
 	option 1: overlap
 	option 2: No such specific property is present
 	option 3: None of the above
+
 Q.36: Which of the following CSS property creates a clipping region and specifies the visible area of the element?
 	option 0: visibility
-	option 1: clip-path
+	option 1: clip-path (*)
 	option 2: Both A and B
 	option 3: None of the above
+
 Q.37: Which of the following is the correct approach to make a table responsive?
-	option 0: overflow-x: auto
+	option 0: overflow-x: auto (*)
 	option 1: overflow-x: none
 	option 2: Both A and B
 	option 3: None of the above
+
 Q.38: What are the uses of CSS pseudo-elements?
 	option 0: Style specified parts of an element
 	option 1: Style the first letter or line of an elelment 
 	option 2: Insert content before or after the element
-	option 3: All of the above
+	option 3: All of the above (*)
+
 Q.39: How can we select elements with a specified attribute in CSS?
-	option 0: [attribute] selector
+	option 0: [attribute] selector (*)
 	option 1: [property] selector
 	option 2: Both A and B
 	option 3: None of the above
+
 Q.40: Which of the following are types of length units in CSS?
 	option 0: Absolute
 	option 1: Relative
-	option 2: Both A and B
+	option 2: Both A and B (*)
 	option 3: None of the above
+
 Q.41: Which of the following are units of relative length in CSS?
 	option 0: em
 	option 1: rem
 	option 2: vmax
-	option 3: All of the above
+	option 3: All of the above (*)
+
 Q.42: What parameter does the calc() function in CSS take?
 	option 0: A sentence
-	option 1: A mathematical
+	option 1: A mathematical (*)
 	option 2: A number
 	option 3: None of the above
+
 Q.43: How can we add more importance to a property/value than normal?
-	option 0: !important
+	option 0: !important (*)
 	option 1: important
 	option 2: bold
 	option 3: None of the above
+
 Q.44: Which CSS property specifies the painting area of the background?
 	option 0: background-size
-	option 1: background-clip
+	option 1: background-clip (*)
 	option 2: background-image
 	option 3: None of the above
+
 Q.45: What are the different types of gradients in CSS?
 	option 0: Linear Gradients
 	option 1: Conic Gradients
 	option 2: Radient Gradients
-	option 3: All of the Above
+	option 3: All of the Above (*)
+
 Q.46: The transparent keyword is equivalent to which RGBA() value in CSS?
 	option 0: RGBA(0, 0, 0, 1)
 	option 1: RGBA(255, 255, 255 1)
-	option 2: RGBA(0, 0, 0, 0)
+	option 2: RGBA(0, 0, 0, 0) (*)
 	option 3: RGBA(255, 255, 255 0)
+
 Q.47: What function is used to insert values of a CSS variable?
-	option 0: var()
+	option 0: var() (*)
 	option 1: rand()
 	option 2: varchar()
 	option 3: calc()
+
 Q.48: Which CSS property is used to create an image reflection? 
-	option 0: box-reflect
+	option 0: box-reflect (*)
 	option 1: image-reflect
 	option 2: reflect-img
 	option 3: None of the above
+
 Q.49: What is the general syntax of writing the var() function?
-	option 0: var(--name, value)
+	option 0: var(--name, value) (*)
 	option 1: var(--name)
 	option 2: var(value)
 	option 3: None of the above
+
 Q.50: How many layout modes were there before the Flexbox Layout Module was introduced in CSS?
 	option 0: 1
 	option 1: 2
 	option 2: 3
-	option 3: 4
+	option 3: 4 (*)
 
 
 HTML
@@ -303,235 +335,280 @@ HTML
 Q.51: HTML stands for -
 	option 0: HighText Machine Language
 	option 1: HyperText and links Markup Language
-	option 2: HyperText Markup Language
+	option 2: HyperText Markup Language (*)
 	option 3: None of these
+
 Q.52: The correct sequence of HTML tags for starting a webpage is -
 	option 0: Head, Title, HTML, body
 	option 1: HTML, Body, Title, Head
 	option 2: HTML, Head, Title, Body
-	option 3: HTML, Head, Title, Body
+	option 3: HTML, Head, Title, Body (*)
+
 Q.53: Which of the following element is responsible for making the text bold in HTML?
 	option 0: <pre>
 	option 1: <a>
-	option 2: <b>
+	option 2: <b> (*)
 	option 3: <br>
+
 Q.54: Which of the following tag is used for inserting the largest heading in HTML?
 	option 0: <h3>
- 	option 1: <h1>
+ 	option 1: <h1> (*)
 	option 2: <h5>
 	option 3: <h5>
+
 Q.55: Which of the following tag is used to insert a line-break in HTML?
-	option 0: <br>
+	option 0: <br> (*)
 	option 1: <a>
 	option 2: <pre>
 	option 3: <b>
+
 Q.56: How to create an unordered list (a list with the list items in bullets) in HTML?
-	option 0: <ul>
+	option 0: <ul> (*)
 	option 1: <ol>
 	option 2: <li>
 	option 3: <i>
+
 Q.57: Which character is used to represent the closing of a tag in HTML?
 	option 0: \
 	option 1: !
-	option 2: /
+	option 2: / (*)
 	option 3: .
+
 Q.58: How to create a hyperlink in HTML?
-	option 0: <a href = "www.javatpoint.com"> javaTpoint.com </a>
+	option 0: <a href = "www.javatpoint.com"> javaTpoint.com </a> (*)
 	option 1: <a url = "www.javatpoint.com" javaTpoint.com /a>
 	option 2: <a link = "www.javatpoint.com"> javaTpoint.com </a>
 	option 3: <a> www.javatpoint.com <javaTpoint.com /a>
+
 Q.59: How to create an ordered list (a list with the list items in numbers) in HTML?
-	option 0: <ul>How to insert an image in HTML?
-	option 1: <ol>
+	option 0: <ul>
+	option 1: <ol> (*)
 	option 2: <li>
 	option 3: <i>
+
 Q.60: Which of the following element is responsible for making the text italic in HTML?
-	option 0: <i>
+	option 0: <i> (*)
 	option 1: <italic>
 	option 2: <it>
 	option 3: <pre>
+
 Q.61: How to insert an image in HTML?
 	option 0: <img href = "jtp.png" />
 	option 1: <img url = "jtp.png" />
-	option 2: <img link = "jtp.png" />
-	option 3: <img src = "jtp.png" />
+	option 2: <img link = "jtp.png" /> 
+	option 3: <img src = "jtp.png" /> (*)
+
 Q.62: How to add a background color in HTML?
 	option 0: <marquee bg color: "red">
 	option 1: <marquee bg-color = "red">
-	option 2: <marquee bgcolor = "red">
+	option 2: <marquee bgcolor = "red"> (*)
 	option 3: <marquee color = "red">
+
 Q.63: <input> is -
 	option 0: a format tag.
-	option 1: an empty tag.
+	option 1: an empty tag.  (*)
 	option 2: All of the above
 	option 3: None of the above
+
 Q.64: Which of the following tag is used to make the underlined text?
 	option 0: <i>
 	option 1: <ul>
-	option 2: <u>
+	option 2: <u> (*)
 	option 3: <pre>
+
 Q.65: How to create a checkbox in HTML?
-	option 0: <input type = "checkbox">
+	option 0: <input type = "checkbox">  (*)
 	option 1: <input type = "button">
 	option 2: <input type = "button">
 	option 3: <input type = "check">
+
 Q.66: Which of the following tag is used to define options in a drop-down selection list?
 	option 0: <select>
 	option 1: <list>
 	option 2: <dropdown>
-	option 3: <option>
+	option 3: <option> (*)
+
 Q.67: HTML tags are enclosed in-
 	option 0: # and #
 	option 1: { and }
 	option 2: ! and ?
-	option 3: < and >
+	option 3: < and > (*)
+
 Q.68: Which of the following tag is used to add rows in the table?
 	option 0: <td> and </td>
 	option 1: <th> and </th>
-	option 2: <tr> and </tr>
+	option 2: <tr> and </tr> (*)
 	option 3: None of the above
+
 Q.69: The <hr> tag in HTML is used for -
 	option 0: new line
 	option 1: vertical ruler
 	option 2: new paragraph
-	option 3: horizontal ruler
+	option 3: horizontal ruler (*)
+
 Q.70: Which of the following attribute is used to provide a unique name to an element?
 	option 0: class
-	option 1: id
+	option 1: id (*)
 	option 2: type
 	option 3: None of the above
+
 Q.71: Which of the following HTML tag is used to display the text with scrolling effect?
-	option 0: <marquee>
+	option 0: <marquee> (*)
 	option 1: <scroll>
 	option 2: <div>
 	option 3: None of the above
+
 Q.72: Which of the following HTML tag is the special formatting tag?
 	option 0: <p>
 	option 1: <b>
-	option 2: <pre>
+	option 2: <pre> (*)
 	option 3: None of the above
+
 Q.73: Which of the following is the correct way to send mail in HTML?
-	option 0: <a href = "mailto: xy@y">
+	option 0: <a href = "mailto: xy@y"> (*)
 	option 1: <a href = "xy@y">
 	option 2: <mail xy@y</mail>
 	option 3: None of the above
+
 Q.74: Which of the following is the container for <tr>, <th>, and <td> ?
 	option 0: <data>
-	option 1: <table>
+	option 1: <table> (*)
 	option 2: <group>
 	option 3:  All of the above
+
 Q.75: How to insert a background image in HTML?
 	option 0: <body background = "img.png">
-	option 1: <img background = "img.png">
+	option 1: <img background = "img.png"> (*)
 	option 2: <bg-image = "img.png">
 	option 3: None of the above
+
 Q.76: What are the types of unordered or bulleted list in HTML?
 	option 0: disc, square, triangle
 	option 1: polygon, triangle, circle
-	option 2: disc, circle, square
+	option 2: disc, circle, square (*)
 	option 3: All of the above
+
 Q.77: Which of the following is the correct way to create a list using the lowercase letters?
 	option 0: <ol alpha = "a" >
-	option 1: <ol type = "a">
+	option 1: <ol type = "a"> (*)
 	option 2: <ol letter = "a">
 	option 3: None of the above
+
 Q.78: Which of the following is the correct way to start an ordered list with the count of numeric value 4?
 	option 0: <ol type = "1" initial = "4">
 	option 1: <ol type = "1" begin = "4">
 	option 2: <ol type = "1" num = "4">
-	option 3: <ol type = "1" start = "4">
+	option 3: <ol type = "1" start = "4"> (*)
+
 Q.79: Which of the following HTML attribute is used to define inline styles?
-	option 0: style
+	option 0: style (*)
 	option 1: type
 	option 2: class
 	option 3: None of the above
+
 Q.80: Which of the following is the paragraph tag in HTML?
-	option 0: <p>
+	option 0: <p> (*)
 	option 1: <b>
 	option 2: <pre>
 	option 3: None of the above
+
 Q.81: ) An HTML program is saved by using the ____ extension.
 	option 0: .ht
-	option 1: .html
+	option 1: .html (*)
 	option 2: .hml
 	option 3: None of the above
+
 Q.82: A program in HTML can be rendered and read by -
-	option 0: Web browser
+	option 0: Web browser (*)
 	option 1: Server
 	option 2: Interpreter
 	option 3: None of the above
+
 Q.83: The tags in HTML are -
 	option 0: case-sensitive
 	option 1: in upper case
-	option 2: not case sensitive
+	option 2: not case sensitive (*)
 	option 3: in lowercase
+
 Q.84: Which of the following is the root tag of the HTML document?
 	option 0: <body>
 	option 1: <head>
 	option 2: <title>
-	option 3: <html>
+	option 3: <html> (*)
+
 Q.85:  In HTML5, which of the following tag is used to initialize the document type?
 	option 0: <Doctype HTML>
 	option 1: <\Doctype html>
 	option 2: <Doctype>
-	option 3: <!DOCTYPE html>
+	option 3: <!DOCTYPE html> (*)
+
 Q.86: Which of the following tag is used to create a combo box (or drop-down box)?
 	option 0: <list>
-	option 1: <select>
+	option 1: <select> (*)
 	option 2: <input type = "dropdown">
 	option 3: <ul>
+
 Q.87: Which of the following are the attributes of the tag?
 	option 0: method
 	option 1: action
-	option 2: Both A and B
+	option 2: Both A and B  (*)
 	option 3: None of the above
+
 Q.88: Which is the correct way to comment out something in HTML?
 	option 0: Using ## and #
-	option 1: Using <!-- and -->
+	option 1: Using <!-- and -->  (*)
 	option 2: Using </-- and -/->
 	option 3: Using <!-- and -!>
+
 Q.89: Which HTML tag is used to display the power in expression, i.e., (x2 - y2)?
-	option 0: <sup>
+	option 0: <sup>  (*)
 	option 1: <sub>
 	option 2: <p>
 	option 3: None of the above
+
 Q.90: Which of the following is the correct way to change the font face in HTML?
 	option 0: <font name = "Calibri"> ……… </font>
-	option 1: <font face = "Calibri"> ……… </font>
+	option 1: <font face = "Calibri"> ……… </font>  (*)
 	option 2: <font = "Calibri"> ……… </font>
 	option 3: None of the above
 
 JavaScript
 Q.91: Javascript is an _______ language?
-	option 0: Object-Oriented
+	option 0: Object-Oriented (*)
 	option 1: Object-Based
 	option 2: Procedural
 	option 3: None of the above
+
 Q.92: Which of the following keywords is used to define a variable in Javascript?
 	option 0: var
 	option 1: let
-	option 2: Both A and B
+	option 2: Both A and B (*)
 	option 3: None of the above
+
 Q.93: Which of the following methods is used to access HTML elements using Javascript?
 	option 0: getElementbyId()
 	option 1: getElementsByClassName()
-	option 2: Both A and B
+	option 2: Both A and B (*)
 	option 3: None of the above
+
 Q.94: Upon encountering empty statements, what does the Javascript Interpreter do?
 	option 0: Throws an error
-	option 1: Ignores the statements
+	option 1: Ignores the statements (*)
 	option 2: Gives a warning
 	option 3: None of the above
+
 Q.95: Which of the following methods can be used to display data in some form using Javascript?
 	option 0: document.write()
 	option 1: console.log()
 	option 2: window.alert()
-	option 3: None of the above
+	option 3: None of the above (*)
+
 Q.96: How can a datatype be declared to be a constant type?
-	option 0: const
-	option 1: var
+	option 0: const (*)
+	option 1: var 
 	option 2: let
 	option 3: constant
+
 Q.97: What will be the output of the following code snippet?
 	<script type="text/javascript">
 	a = 5 + "9";
@@ -540,17 +617,19 @@ Q.97: What will be the output of the following code snippet?
 	option 0: Compilation Error
 	option 1: 14
 	option 2: Runtime Error
-	option 3: 59
+	option 3: 59 (*)
+
 Q.98: What will be the output of the following code snippet?
 	<script type="text/javascript" language="javascript">
   	var a = "Scaler";
 	var result = a.substring(2, 4);
 	document.write(result);
   	</script>
-	option 0: al
+	option 0: al (*)
 	option 1: ale
 	option 2: cal
 	option 3: caler
+
 Q.99: What will be the output of the following code snippet?
 	<script type="text/javascript" language="javascript">
  	var x=12;
@@ -558,25 +637,29 @@ Q.99: What will be the output of the following code snippet?
 	var res=eval("x+y");
 	document.write(res);
  	</script>
-	option 0: 20
+	option 0: 20 (*)
 	option 1: x+y
 	option 2: 128
 	option 3: None of the above
+
 Q.100: When the switch statement matches the expression with the given labels, how is the comparison done?
-	option 0: Both the datatype and the result of the expression are compared.
+	option 0: Both the datatype and the result of the expression are compared. (*)
 	option 1: Only the datatype of the expression is compared
 	option 2: Only the value of the expression is compared
 	option 3: None of the above
+
 Q.101: What keyword is used to check whether a given property is valid or not?
-	option 0: in
+	option 0: in (*)
 	option 1: is in
 	option 2: exists
 	option 3: lies
+
 Q.102: What is the use of the <noscript> tag in JavaScript?
-	option 0: The contents are displayed by non-JS-based browsers.
+	option 0: The contents are displayed by non-JS-based browsers. (*)
 	option 1: Clears all the cookies and cache
 	option 2: Both A and B.
 	option 3: None of the above
+
 Q.103: What will be the output of the following code snippet?
 	(function(){
  	setTimeout(()=> console.log(1),2000);
@@ -586,8 +669,9 @@ Q.103: What will be the output of the following code snippet?
 	})();
 	option 0: 1 2 3 4
 	option 1: 2 3 4 1
-	option 2: 2 4 3 1
+	option 2: 2 4 3 1 (*)
 	option 3: 4 3 2 1
+
 Q.104: What will be the output of the following code snippet?
 	(function(a){
 	 return (function(){
@@ -597,8 +681,9 @@ Q.104: What will be the output of the following code snippet?
 	})(21);
 	option 0: 6
 	option 1: NaN
-	option 2: 21
+	option 2: 21 (*)
 	option 3: None of the above
+
 Q.105: What will be the output of the following code snippet?
 	function solve(arr, rotations){
  	if(rotations == 0) return arr;
@@ -609,10 +694,11 @@ Q.105: What will be the output of the following code snippet?
  	return arr;
 	}
 	// solve([44, 1, 22, 111], 5);
-	option 0: [111, 44, 1, 22]
+	option 0: [111, 44, 1, 22] (*)
 	option 1: [44, 1, 22, 111]
 	option 2: [111, 44, 1, 22]
 	option 3: [1, 22, 111, 44]
+
 Q.106: What will be the output for the following code snippet?
 	<p id="example"></p>  
 	<script>  
@@ -621,15 +707,17 @@ Q.106: What will be the output for the following code snippet?
 	document.getElementById("example").innerHTML=Math.sqrt(81);  
 	}  
 	</script>
-	option 0: 9
+	option 0: 9 (*)
 	option 1: 81
 	option 2: Error
 	option 3: 0
+
 Q.107: When an operator's value is NULL, the type of returned by the unary operator is:
 	option 0: Boolean
 	option 1: Undefined
-	option 2: Object
+	option 2: Object (*)
 	option 3: Integer
+
 Q.108: What will be the output of the following code snippet?
 	var a = 1;  
 	var b = 0;  
@@ -639,66 +727,76 @@ Q.108: What will be the output of the following code snippet?
    		b += a * 2;  
    		print(b);
 	}
-	option 0: 4 10 18
+	option 0: 4 10 18 (*)
 	option 1: 1 2 3
 	option 2: 1 4 7
 	option 3: None of the above
+
 Q.109: What does the Javascript “debugger” statement do?
 	option 0: It will debug all the error in the program at runtime.
-	option 1: It acts as a breakpoint in a program.
+	option 1: It acts as a breakpoint in a program. (*)
 	option 2: It will debug error in the current statement if any.
 	option 3: All of the above.
+
 Q.110: What will be the output of the following code snippet?
 	var a = Math.max();
 	var b = Math.min();
 	print(a);
 	print(b);
-	option 0: -Infinity Infinity
+	option 0: -Infinity Infinity (*)
 	option 1: Infinity -Infinity
 	option 2: Infinity Infinity
 	option 3: -Infinity -Infinity
+
 Q.111: What will be the output of the following code snippet?
 	var a = Math.max() < Math.min();
 	var b = Math.max() > Math.min();
 	print(a);
 	print(b);
-	option 0: true false
+	option 0: true false (*)
 	option 1: false true
 	option 2: true true
 	option 3: false false
+
 Q.112: What will be the output of the following code snippet?
 	var a = true + true + true * 3;
 	print(a)
 	option 0: 3
 	option 1: 0
 	option 2: Error
-	option 3: 5
+	option 3: 5 (*)
+
 Q.113: What is the output of the following code snippet?
 	print(typeof(NaN));
 	option 0: Object
-	option 1: Number
+	option 1: Number (*)
 	option 2: String
 	option 3: None of the above
+
 Q.114: What does the ‘toLocateString()’ method do in JS?
 	option 0: Returns a localised object representation.
 	option 1: Returns a parsed string
-	option 2: Returns a localized string representation of an object.
+	option 2: Returns a localized string representation of an object. (*)
 	option 3: None of the above.
+
 Q.115: The process in which an object or data structure is translated into a format suitable for transferral over a network, or storage is called?
-	option 0: Object Serialization
+	option 0: Object Serialization (*)
 	option 1: Object Encapsulation
 	option 2: Object Inheritance
 	option 3: None of the above
+
 Q.116: Which function is used to serialize an object into a JSON string in Javascript?
-	option 0: stringify()
+	option 0: stringify() (*)
 	option 1: parse()
 	option 2: convert()
+
 	option 3: None of the above
 Q.117: The 3 basic object attributes in Javascript are:
 	option 0: Class, prototype, objects' parameters.
-	option 1: Class, prototype, object's extensible flag
+	option 1: Class, prototype, object's extensible flag (*)
 	option 2: Class, parameters, object's extensible flag.
-	option 3: Classes, Native object, and Interfaces and Object's extensible flag.
+	option 3: Classes, Native object, and Interfaces and Object's extensible flag. (*)
+
 Q.118: What will be the output of the following code snippet?
 	let sum = 0; 
 	const a = [1, 2, 3];
@@ -707,34 +805,38 @@ Q.118: What will be the output of the following code snippet?
 	function getSum(ele) {
   		sum += ele;
 	}
-	option 0: 6
+	option 0: 6 (*)
 	option 1: 1
 	option 2: 2
 	option 3: None of the above
 Q.119: What will be the output of the following code snippet?
 	a = [1, 2, 3, 4, 5];
 	print(a.slice(2, 4));
-	option 0: 3, 4
+	option 0: 3, 4 (*)
 	option 1: 2, 3
 	option 2: 3, 4, 5
 	option 3: 2, 3, 4
+
 Q.120: What will be the output of the following code snippet?
 	print(parseInt("123Hello"));
 	print(parseInt("Hello123"));
-	option 0: 123 NaN
+	option 0: 123 NaN (*)
 	option 1: 123Hello Hello123
 	option 2: NaN NaN
 	option 3: 123 123
+
 Q.121: Which of the following are closures in Javascript?
 	option 0: Variables
 	option 1: Functions
 	option 2: Objects
-	option 3: All of the above
+	option 3: All of the above (*)
+
 Q.122: Which of the following is NOT a Javascript framework?
 	option 0: Node
 	option 1: Vue
 	option 2: React
-	option 3: Cassandra
+	option 3: Cassandra (*)
+
 Q.123: What will be the output of the following code snippet?
 	var a = "hello";
 	var sum = 0;
@@ -743,19 +845,22 @@ Q.123: What will be the output of the following code snippet?
 	}
 	print(sum);
 	option 0: 47
-	option 1: NaN
+	option 1: NaN (*)
 	option 2: 0
 	option 3: None of the above
+
 Q.124: What keyword is used to declare an asynchronous function in Javascript?
-	option 0: async
+	option 0: async (*)
 	option 1: await
 	option 2: setTimeout
 	option 3: None of the above
+
 Q.125: How to stop an interval timer in Javascript?
-	option 0: clearInterval
+	option 0: clearInterval (*)
 	option 1: clearTimer
 	option 2: intervalOver
 	option 3: None of the above
+
 Q.126: What will be the output of the following code snippet?
 	const set = new Set();
 	set.add(5);
@@ -766,18 +871,21 @@ Q.126: What will be the output of the following code snippet?
 	}
 	option 0: 11 NaN NaN
 	option 1: 11 NaN [object Object]
-	option 2: 11 Hello6 [object Object]6
+	option 2: 11 Hello6 [object Object]6 (*)
 	option 3: None of the above
+
 Q.127: How are objects compared when they are checked with the strict equality operator?
 	option 0: The contents of the objects are compared
-	option 1: Their references are compared
+	option 1: Their references are compared (*)
 	option 2: Both A and B
 	option 3: None of the above
+
 Q.128: What does ... operator do in JS?
-	option 0: It is used to spread iterables to individual elements
+	option 0: It is used to spread iterables to individual elements (*)
 	option 1: It is used to describe a dataype of undefined size
 	option 2: No such operator exists
 	option 3: None of the above
+
 Q.129: What will be the output of the following code snippet?
 	const example = ({ a, b, c }) => {
  	 console.log(a, b, c);
@@ -785,8 +893,9 @@ Q.129: What will be the output of the following code snippet?
 	example(0, 1, 2);
 	option 0: 0 1 2
 	option 1: 0 Undefined Undefined
-	option 2: Undefined Undefined Undefined
+	option 2: Undefined Undefined Undefined (*)
 	option 3: None of the above
+
 Q.130: What will be the output of the following code snippet?
 		let a = [1, 2, 3, 4, 5, 6];
 	var left = 0, right = 5;
@@ -811,10 +920,11 @@ Q.130: What will be the output of the following code snippet?
 	else {
  		print("NO");
 	}
-	option 0: YES
+	option 0: YES (*)
 	option 1: NO
 	option 2: Syntax Error
 	option 3: None of the Above
+
 Q.131: What will the output of the following code snippet?
 	let s = "00000001111111";
 	let l = 0, r = s.length - 1, ans = -1;
@@ -830,9 +940,10 @@ Q.131: What will the output of the following code snippet?
 	}
 	print(ans);
 	option 0: 8
-	option 1: 7
+	option 1: 7 (*)
 	option 2: 0
 	option 3: 1
+
 Q.132: What will be the output of the following code snippet?
 	let n = 24;
 	let l = 0, r = 100, ans = n;
@@ -848,17 +959,19 @@ Q.132: What will be the output of the following code snippet?
 	}
 	print(ans);
 	option 0: 5
-	option 1: 4
+	option 1: 4 (*)
 	option 2: 6
 	option 3: 3
+
 Q.133: What will be the output of the following code snippet?
 	const obj1 = {Name: "Hello", Age: 16};
 	const obj2 = {Name: "Hello", Age: 16};
 	print(obj1 === obj2);
 	option 0: true
-	option 1: false
+	option 1: false (*)
 	option 2: Undefined
 	option 3: None of the above
+
 Q.134: What happens when we run this code?
 	function dog() {
    		print("I am a dog.");
@@ -867,17 +980,20 @@ Q.134: What happens when we run this code?
 	option 0: Syntax Error
 	option 1: "I am a dog" gets printed
 	option 2: Reference Error
-	option 3: None of the above
+	option 3: None happens (*)
+
 Q.135: How do we write a comment in JavaScript?
 	option 0: /* */
-	option 1: //
+	option 1: // (*)
 	option 2: #
 	option 3: $ $
+
 Q.136: Which object in JavaScript doesn't have a prototype?
-	option 0: Base Object
+	option 0: Base Object *
 	option 1: All objects have prototype
 	option 2: None of the objects have a prototype
 	option 3: None of the above
+
 Q.137: What will be the output of the following snippet?
 	function test(...args) {
  		console.log(typeof args);
@@ -885,83 +1001,29 @@ Q.137: What will be the output of the following snippet?
 	test(12);
 	option 0: NaN
 	option 1: Number
-	option 2: Object
+	option 2: Object (*)
 	option 3: Array
+
 Q.138: What will be the output of the following code snippet?
 	const obj1 = {first: 20, second: 30, first: 50};
 	console.log(obj1);
 	option 0: {first: 20, second: 30}
-	option 1: {first: 50, second: 30}
+	option 1: {first: 50, second: 30} (*)
 	option 2: {first: 20, second: 30, first: 50}
 	option 3: Syntax Error
+
 Q.139: Which of the following are not server-side JavaScript objects?
 	option 0: Date
 	option 1: FileUpload
 	option 2: Function
-	option 3: All of the above
+	option 3: All of the above (*)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Q.140: What is the output of the following code snippet?
+	print(NaN === NaN);
+	option 0: true
+	option 1: false (*)
+	option 2: undefined
+	option 3: Error
 
 
 
