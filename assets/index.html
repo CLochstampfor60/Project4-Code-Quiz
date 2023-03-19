@@ -19,7 +19,7 @@
   </head>
 
 <body>
-	<div class="home-box custom-box">
+	<div class="home-box custom-box hide">
 		<h1 class="top-p">Coding Quiz<br></h1>
 		<p style="text-indent: 25px;">Embark on an amazing yet dangerous multiple-choice question adventure in the magical world of 'Coding.'</p><br>
 		<p style="text-indent: 25px;">You'll test your metal by learning the archaic arts of 'Computer Code' through a series of difficult tasks and questions.</p><br>
@@ -31,7 +31,7 @@
 		<h2 class="instructions">Instructions:</h2>
 				<p> 
 					<ul>
-						<li>You've got <u><span class="total-time">5 minutes</span></u> (seen at the top-right of the screen) to complete <u><span class="total-question">25 questions.</span></u></li>
+						<li>You've got <u><span class="total-time">5 minutes</span></u> (timer seen at the top-right of the screen) to complete <u><span class="total-question">25 questions.</span></u></li>
 						<li>Each question provides four (4) different options to choose from.</li>
 						<li>If you choose correctly, you will get <u>one (1)</u> point for each correct answer.</li>
 						<li>If you choose incorrectly, you will get <u>zero (0)</u> points for each incorrect answer, <u>AND suffer 'timer-burn'</u> (aka, time-stolen and deducted from the ticking-down clock).</li>
@@ -41,7 +41,9 @@
 
 				<p style="text-align: center;">Click <u>'Start Quiz'</u>to find out if you're worthy to be crowned the next <u>Coding Wizard Champion!!!!!</u></p>
 				<p class="wizard">🔥🔥🧙🧙🧙🧙🧙🧙🧙🔥🔥</p>
-			<button type ="button" class="btn">Start Quiz</button>
+			<div class="btn-container">
+				<button type ="button" class="btn">Start Quiz</button>
+			</div>
 		</div>
 
 		<div class="quiz-box custom-box">
@@ -61,7 +63,7 @@
 				</div>
 
 				<div class="next-question-btn">
-					<button type="button" class="btn">Next</button>
+					<button type="button" class="btn">Next Question</button>
 				</div>
 
 				<div class="answers-indicator">

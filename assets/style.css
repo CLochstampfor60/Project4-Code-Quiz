@@ -1,7 +1,9 @@
-/* Root settings for entire web application ---------------------------------------------------------- */
+/* Root settings for multiple uses within entire web application -------------------------------------------------- */
 :root {
 	--title-font: 'MedievalSharp', cursive;
-	--text-font: 'Almendra', serif;;
+	--text-font: 'Almendra', serif;
+	--btn-text: hsl(0, 0%, 100%);
+	--btn-background: hsl(360, 91%, 36%);
 }
 
 /* Home page and foundational settings for entire web application ----------------------------------------------------------*/
@@ -22,7 +24,7 @@ body {
 	max-width: 700px;
 	background-color: #C4A484;
 	margin: 40px auto;
-	padding: 40px;
+	padding: 15px 40px 15px 40px;
 	border-radius: 10%;
 	font-family: var(--text-font);
 	color: black;
@@ -30,6 +32,10 @@ body {
 	border-color: beige;
 	border-style: double;
 	border-width: 25px;
+}
+
+.custom-box.hide {
+	display: none;
 }
 
 h1,
@@ -44,13 +50,13 @@ h4 {
 	text-shadow: 2px 2px #ff0000;
 }
 
-.home-box .top-p {
+/* .home-box .top-p {
 	text-indent: center;
 	padding-bottom: 10px;
-}
+} */
 
 .home-box .instructions {
-	padding-top: 10px;
+	padding-top: 15px;
 }
 
 p.wizard {
@@ -61,21 +67,22 @@ p.wizard {
 	line-height: 30px;
 }
 
-button {
+.btn-container {
 text-align: center;
+margin: 0;
 }
 
-.home-box .btn {
-
-}
+/* .home-box .btn {
+	text-align: center;
+} */
 
 .btn {
 	border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: var(--btn-background);
   border-radius: 25px;
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px; */
-  color: hsl(0, 0%, 100%);
+  color: var(--btn-text);
   /* display: inline-block; */
   font-size: 22px;
   line-height: 20px;
@@ -85,6 +92,14 @@ text-align: center;
   cursor: pointer;
 }
 
+.home-box .btn-container .btn:hover {
+	background-color: var(--btn-text) ;
+	color: var(--btn-background);
+	font-size: 26px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+}
 
 /* Settings for the question sections ------------------------------------------------------------------------- */
 .quiz-box .question-number {
@@ -92,31 +107,60 @@ text-align: center;
 	font-family: var(--title-font);
 	text-align: left;
 	text-decoration: underline;
-	padding-bottom: 10px;
 	color: #FDEE73;
-	text-shadow: 2px 2px #ff0000;
+	text-shadow: 1px 1px hsl(360, 91%, 36%);
 	border-bottom: 1px solid black;
+	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 30px;
 }
 
 .quiz-box .question-text {
-	color: #FFFFCC;
-	/* text-shadow: 2px 2px beige; */
+	color: black; 
+	/* text-shadow: 2px 2px black; */
 	text-align: left;
 	font-size: 28px;
-	font-weight: 400;
+	font-weight: 600;
+	padding: 10px;
 }
 
 .quiz-box .option-container {
-text-align: center;
-font-size: 24px;
+	text-align: left;
+	font-size: 24px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid black;
+	padding-bottom: 15px;
+	line-height: 30px;
 }
 
-.quiz-box .next-question-button {
-
+.quiz-box .option-container .option {
+background: skyblue;
+padding: 10px;
+line-height: 22px;
+border-radius: 5px;
+margin-bottom: 5px;
+cursor: pointer;
 }
 
+.quiz-box .option-container .option:hover {
+	background-color: black;
+	color: skyblue;
+}
+
+.quiz-box .next-question-btn {
+	text-align: left;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.quiz-box .next-question-btn .btn:hover {
+	background-color: var(--btn-text) ;
+	color: var(--btn-background);
+	font-size: 26px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+}
 
 /* Media responsive settings for mobile and handheld devices ---------------------------------------------------------- */
 @media (max-width: 690px) {
