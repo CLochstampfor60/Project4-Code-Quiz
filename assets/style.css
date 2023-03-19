@@ -11,6 +11,12 @@ body {
 	margin: 0;
 	font-size: 22px;
 	background-color: skyblue;
+	/* display: flex;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center; */
 }
 
 *{
@@ -32,6 +38,7 @@ body {
 	border-color: beige;
 	border-style: double;
 	border-width: 25px;
+	box-shadow: 0 0 10px 2px;
 }
 
 .custom-box.hide {
@@ -90,6 +97,7 @@ margin: 0;
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+	border: 2px solid black;
 }
 
 .home-box .btn-container .btn:hover {
@@ -102,6 +110,13 @@ margin: 0;
 }
 
 /* Settings for the question sections ------------------------------------------------------------------------- */
+.quiz-box {
+	width: 800px;
+	max-width: 80%;
+	box-shadow: 0 0 10px 2px;
+}
+
+/* Progress tracker within the game. */
 .quiz-box .question-number {
 	font-size: 22px;
 	font-family: var(--title-font);
@@ -113,8 +128,10 @@ margin: 0;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	line-height: 30px;
+	font-weight: 400px;
 }
 
+/* Question in the middle of the page */
 .quiz-box .question-text {
 	color: black; 
 	/* text-shadow: 2px 2px black; */
@@ -124,6 +141,7 @@ margin: 0;
 	padding-top: 10px;
 }
 
+/* List of four possible answer choices for the player to choose from. */
 .quiz-box .option-container {
 	text-align: left;
 	font-size: 24px;
@@ -138,6 +156,8 @@ background: skyblue;
 padding: 10px;
 line-height: 22px;
 border-radius: 15px;
+border-style: solid;
+border-width: 5px;
 margin: 10px;
 cursor: pointer;
 }
@@ -147,6 +167,17 @@ cursor: pointer;
 	color: skyblue;
 }
 
+.quiz-box .option-container.option.correct {
+	color: black;
+	background-color: green;
+}
+
+.quiz-box .option-container.option.wrong {
+	color: black;
+	background-color: red;
+}
+
+/* Next Question Button at the bottom left of the card. */
 .quiz-box .next-question-btn {
 	text-align: left;
 	margin: 0;
