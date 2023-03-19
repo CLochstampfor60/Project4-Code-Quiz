@@ -28,7 +28,7 @@ body {
 
 .custom-box{
 	max-width: 700px;
-	background-color: #C4A484;
+	background-color: #966919;
 	margin: 40px auto;
 	padding: 15px 40px 15px 40px;
 	border-radius: 10%;
@@ -92,6 +92,7 @@ margin: 0;
   color: var(--btn-text);
   /* display: inline-block; */
   font-size: 22px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 20px;
   margin: 10px 10px 16px 20px;
   padding: 14px 34px;
@@ -118,12 +119,13 @@ margin: 0;
 
 /* Progress tracker within the game. */
 .quiz-box .question-number {
-	font-size: 22px;
+	font-size: 26px;
 	font-family: var(--title-font);
+	font-weight: bold;
 	text-align: left;
 	text-decoration: underline;
 	color: #FDEE73;
-	text-shadow: 1px 1px hsl(360, 91%, 36%);
+	text-shadow: 2px 2px hsl(360, 91%, 36%);
 	border-bottom: 1px solid black;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -177,9 +179,20 @@ cursor: pointer;
 	background-color: red;
 }
 
+/* Following adds correctly answered questions below Next Question button, not required. */
+/* .answers-indicator div{
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	background-color: #FDEE73;
+	border-radius: 50%;
+	margin-left: 3px;
+	margin-top: 10px;
+} */
+
 /* Next Question Button at the bottom left of the card. */
 .quiz-box .next-question-btn {
-	text-align: left;
+	text-align: right;
 	margin: 0;
 	padding-top: 10px;
 }
