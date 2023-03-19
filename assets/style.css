@@ -51,13 +51,16 @@ p.wizard {
 	margin: 8px;
 }
 
-/* button {
-	line-height: 20px;
+button {
+
+}
+
+.home-box .btn {
 	text-align: center;
-} */
+}
 
 .btn {
-	border:hsl(0, 0%, 100%);
+	border: none;
   background-color: hsl(360, 91%, 36%);
   border-radius: 25px;
   /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
@@ -72,6 +75,36 @@ p.wizard {
   cursor: pointer;
 }
 
-h2.instructions.p {
-	float: center;
+question-number {
+
+}
+
+
+question-text {
+
+}
+
+option-container {
+
+}
+
+next-question-button {
+
+}
+
+
+
+
+
+@media (max-width: 690px) {
+  .btn {
+    font-size: 1rem;
+    margin: 16px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.8rem;
+  }
 }
