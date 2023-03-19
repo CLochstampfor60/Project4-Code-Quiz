@@ -1,9 +1,10 @@
-
+/* Root settings for entire web application ---------------------------------------------------------- */
 :root {
 	--title-font: 'MedievalSharp', cursive;
 	--text-font: 'Almendra', serif;;
 }
 
+/* Home page and foundational settings for entire web application ----------------------------------------------------------*/
 body {
 	margin: 0;
 	font-size: 22px;
@@ -21,11 +22,11 @@ body {
 	max-width: 700px;
 	background-color: #C4A484;
 	margin: 40px auto;
-	padding: 30px;
+	padding: 40px;
 	border-radius: 10%;
 	font-family: var(--text-font);
 	color: black;
-	font-weight: 650;
+	font-weight: 600;
 	border-color: beige;
 	border-style: double;
 	border-width: 25px;
@@ -39,24 +40,33 @@ h4 {
 	text-align: center;
 	text-decoration: underline;
 	padding-bottom: 10px;
-	color:#654321;
+	color: #FDEE73;
+	text-shadow: 2px 2px #ff0000;
 }
 
-.h1 {
+.home-box .top-p {
 	text-indent: center;
+	padding-bottom: 10px;
+}
+
+.home-box .instructions {
+	padding-top: 10px;
 }
 
 p.wizard {
 	text-align: center;
 	margin: 8px;
+	border-bottom: 1px solid black;
+	padding-bottom: 15px;
+	line-height: 30px;
 }
 
 button {
-
+text-align: center;
 }
 
 .home-box .btn {
-	text-align: center;
+
 }
 
 .btn {
@@ -75,27 +85,40 @@ button {
   cursor: pointer;
 }
 
-question-number {
+
+/* Settings for the question sections ------------------------------------------------------------------------- */
+.quiz-box .question-number {
+	font-size: 22px;
+	font-family: var(--title-font);
+	text-align: left;
+	text-decoration: underline;
+	padding-bottom: 10px;
+	color: #FDEE73;
+	text-shadow: 2px 2px #ff0000;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+
+.quiz-box .question-text {
+	color: #FFFFCC;
+	/* text-shadow: 2px 2px beige; */
+	text-align: left;
+	font-size: 28px;
+	font-weight: 400;
+}
+
+.quiz-box .option-container {
+text-align: center;
+font-size: 24px;
+}
+
+.quiz-box .next-question-button {
 
 }
 
 
-question-text {
-
-}
-
-option-container {
-
-}
-
-next-question-button {
-
-}
-
-
-
-
-
+/* Media responsive settings for mobile and handheld devices ---------------------------------------------------------- */
 @media (max-width: 690px) {
   .btn {
     font-size: 1rem;
