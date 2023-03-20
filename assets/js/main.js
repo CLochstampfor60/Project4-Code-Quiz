@@ -1,4 +1,4 @@
-
+// Starting work, constants to use later in the functions below.
 const questionNumber = document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
 const optionContainer = document.querySelector(".option-container");
@@ -33,27 +33,27 @@ function getNewQuestion() {
 	// Ensures we don't repeat a question, by removing the question from the available array in that specific quiz taking event.
 	availableQuestions.splice(index1, 1);
 
-	// Pushes the assigned 
+	// Pushes the assigned question
 	const optionsLen = currentQuestion.options.length;
 	for(let i=0; i<optionsLen; i++) {
 		availableOptions.push(i);
 	}
 
+	// Loads to the html the animation that generates when a physical choice is made on the Quiz Box.
 	optionContainer.innerHTML = '';
 	let animationDelay = 0.3;
 
-// Creates the options in html.
+// Creates the options in html (aka, answer choices to the question on the screen pop-up).
 	for(let i=0; i<optionsLen; i++) {
-		// Randomized option.
+		// Randomized options.
 		const optionsIndex = availableOptions[Math.floor(Math.random() * availableOptions.length)];
 		// Pulls the exact position/location of 'optionsIndex' from the availableOptions list.
 		const index2 = availableOptions.indexOf(optionsIndex);
 				// / Ensures we don't repeat a question, by removing the question from the available array in that specific quiz taking event.
 		availableOptions.splice(index2, 1);
-		// console.log(optionsIndex);
-		// console.log(availableOptions);
 		const option = document.createElement("div");
 		option.innerHTML = currentQuestion.options[optionsIndex];
+		// extra animation commented out to leave for later if I choose to add it back later.
 		// options.style.animateDelay = animationDelay + 's';
 		// animationDelay = animationDelay + 0.2;
 		option.id = optionsIndex;
@@ -62,6 +62,8 @@ function getNewQuestion() {
 		option.setAttribute("onclick", "getResult(this)");
 	}
 
+//Once the user is completes their choice, it is accounted for within the console to be used for the Quiz Results page.
+// A '1' is added each time to the console for each correctly answered question. 
 	console.log(currentQuestion.options);
 	questionCounter++;
 }
@@ -85,7 +87,7 @@ function getResult (element) {
 	}
 }
 
-// Make all the options unlickable after one of the options are chosen. Restricts player from abusing the game's system to earn a higher score.
+// Make all the options unclickable after the user makes a choice. Restricts player from abusing the game's system to earn a higher score.
 function unclickableOptions() {
 	const optionsLen = optionContainer.children.length;
 	for (let i=0 ; i<optionsLen; i++) {
@@ -93,6 +95,8 @@ function unclickableOptions() {
 	}
 }
 
+// Allows the game to keep track of the amount of correct and incorrect answer choices.
+// Keeping track of it allows the information to push to the Quiz Results page at the end.
 function answerIndicators() {
 	const totalQuestions = quiz.length;
 	for(let i=0; i<totalQuestions; i++) {
@@ -100,11 +104,11 @@ function answerIndicators() {
 		answersIndicatorContainer.appendChild(indicator);
 	}
 }
-
+// Changes the text to show 'correct/wrong' instead of other words or numbers on the console.
 function updateAnswerIndicator(markType) {
 	answersIndicatorContainer.children[questionCounter-1].classList.add(markType);
 }
-
+// Method to continue the game based on the remaining questions left. Once complete, the game is over.
 function next() {
 	if (questionCounter === quiz.length) {
 		// console.log("quiz over")
@@ -114,13 +118,14 @@ function next() {
 		getNewQuestion();
 	}
 }
-
+// Switches between different boxes once a certain function is complete. Hides one box, 'reveals' another by removing the 'hide' element already implanted.
 function quizOver () {
 	quizBox.classList.add("hide");
 	resultBox.classList.remove("hide");
 	quizResult();
 }
 
+// Quiz Result page, showing the results on a clean table.
 function quizResult () {
 	resultBox.querySelector(".total-questions").innerHTML = quiz.length;
 	resultBox.querySelector(".total-correct").innerHTML = correctAnswers;
