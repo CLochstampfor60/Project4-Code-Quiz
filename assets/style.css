@@ -178,6 +178,40 @@ border-style: solid;
 border-width: 5px;
 margin: 10px;
 cursor: pointer;
+/* animation: fadeIn 1.0s ease forwards; */
+position: relative;
+overflow: hidden;
+}
+
+.quiz-box .option-container .option.correct:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: green;
+	/* color: white; */
+	z-index: -1;
+	animation: slideInLeft .10s ease forwards;
+}
+
+@keyframes slideInLeft {
+	0%{
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+}
+
+}
+
+.quiz-box .option-container .option.correct {
+	color:hsl(0, 0%, 100%);
+}
+
+.quiz-box .option-container .option.wrong {
+
 }
 
 .quiz-box .option-container .option:hover {

@@ -103,12 +103,12 @@ const quiz = [
 },
 {
 	q: 'How to create an unordered list (a list with the list items in bullets) in HTML?',
-	options: ['<ul>', '<ol>', '<li>', '<i>'],
+	options: ["'<ul>', '<ol>', '<li>', '<i>'"],
 	answer:0
 },
 {
 	q: 'Which character is used to represent the closing of a tag in HTML?',
-	options: ["'\', '!', '/', '.'"],
+	options: [["'\', '!', '/', '.'"]],
 	answer: 2
 },
 {
