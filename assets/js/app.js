@@ -73,9 +73,11 @@ function getResult (element) {
 		// A correct answer option chosen will turn to the color of 'color'.
 		element.classList.add("correct")
 		console.log("Correct: " + correctAnswers);
+		// correctAnswers+++;
 	} else {
 		// A wrong answer option chosen will turn to the color of 'red'.
-		element.classList.add("wrong")
+		element.classList.add("wrong");
+		// wrongAnswers+++;
 
 		unclickableOptions();
 	}
@@ -100,8 +102,18 @@ function next() {
 }
 
 function quizOver {
- quizPage.classList.add("hide");
- resultPage.classList.remove("hide");
+	quizPage.classList.add("hide");
+	resultPage.classList.remove("hide");
+	quizResult();
+}
+
+// Get the results of the quiz
+function quizResult () {
+	quizPage.querySelector(".total-questions").innerHTML = quiz.length;
+	quizPage.querySelector(".total-correct").innerHTML = correctAnswers;
+	quizPage.querySelector(".total-wrong").innerHTML = wrongAnswers;
+	quizPage.querySelector(".total-score").innerHTML = correctAnswers + "/" + quiz.length;
+	// quizPage.querySelector(".your-initials").innerHTML = quiz.length;
 }
 
 window.onload = function() {

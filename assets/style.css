@@ -255,7 +255,7 @@ overflow: hidden;
 
 /* Next Question Button at the bottom left of the card. */
 .quiz-box .next-question-btn {
-	text-align: right;
+	text-align: center;
 	margin: 0;
 	padding-top: 10px;
 }
