@@ -39,7 +39,8 @@ function getNewQuestion() {
 	}
 
 	optionContainer.innerHTML = '';
-	let animationDelay = 0.2;
+	let animationDelay = 0.3;
+
 // Creates the options in html.
 	for(let i=0; i<optionsLen; i++) {
 		// Randomized option.
@@ -113,12 +114,36 @@ function quizResult () {
 	// resultBox.querySelector(".your-initials").innerHTML = 
 }
 
-window.onload = function() {
-	setAvailableQuestions();
-	getNewQuestion();
+function resetQuiz() {
+	questionCounter = 0;
+	correctAnswers = 0;
 }
 
+function tryAgainQuiz() {
+	resultBox.classList.add("hide");
+	quizBox.classList.remove("hide");
+	resetQuiz();
+	startQuiz();
+}
 
+function goHome() {
+	resultBox.classList.add("hide");
+	homeBox.classList.remove("hide");
+	resetQuiz();
+}
+
+// --------------------------Starting Point for the entire game and resetting it.------------------------
+function startQuiz() {
+	homeBox.classList.add("hide");
+	quizBox.classList.remove("hide");
+	setAvailableQuestions();
+	getNewQuestion();
+
+}
+
+window.onload = function () {
+	homeBox.querySelector(".total-question").innerHTML = quiz.length;
+}
 
 
 

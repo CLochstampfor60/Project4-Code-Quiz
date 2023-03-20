@@ -15,7 +15,7 @@
   </head>
 
 <body>
-	<div class="home-box custom-box hide">
+	<div class="home-box custom-box">
 		<h1 class="top-p">Coding Quiz<br></h1>
 		<p style="text-indent: 25px;">Embark on an amazing yet dangerous multiple-choice question adventure in the magical world of 'Coding.'</p><br>
 		<p style="text-indent: 25px;">You'll test your metal by learning the archaic arts of 'Computer Code' through a series of difficult tasks & questions. At the end of your adventure, your high-score will be logged in the books of eternity.</p><br>
@@ -26,7 +26,7 @@
 		<h2 class="instructions">Instructions:</h2>
 				<p> 
 					<ul>
-						<li>You've got <u><span class="total-time">3 minutes</span></u> (timer seen at the top-right of the screen) to complete <u><span class="total-question">24 questions.</span></u></li>
+						<li>You've got <u><span class="total-time">3 minutes</span></u> (timer seen at the top-right of the screen) to complete <u><span class="total-question"></span> questions.</u></li>
 						<li>Each question provides four (4) different options to choose from.</li>
 						<li>If you choose correctly, you will get <u>one (1)</u> point.</li>
 						<li>If you choose wrong, you will get <u>zero (0)</u> points, <br><u>AND</u> suffer <u>'timer-burn'</u> (aka, time-stolen and deducted from the ticking-down clock).</li>
@@ -37,11 +37,11 @@
 				<p style="text-align: center;">Click <u>'Start Quiz'</u>to find out if you're worthy enough to be crowned the next <u>Coding Wizard Champion!!!!!</u></p>
 				<p class="wizard">🔥🔥🧙🧙🧙🧙🧙🧙🧙🔥🔥</p>
 			<div class="btn-container">
-				<button type ="button" class="btn">Start Quiz</button>
+				<button type ="button" class="btn" onclick="startQuiz()">Start Quiz</button>
 			</div>
 		</div>
 
-		<div class="quiz-box custom-box">
+		<div class="quiz-box custom-box hide">
 				<div class="question-number">
 					<!-- Question 1 of 25:  -->
 				</div>
@@ -93,8 +93,8 @@
 				</tr>
 			</table>
 			<div class="end">
-				<button type="button" class="btn" class="tryAgain">Try Again</button>
-				<button type="button" class="btn" class="goHome">Go Home</button>
+				<button type="button" class="btn" onclick="tryAgainQuiz()">Try Again</button>
+				<button type="button" class="btn" onclick="goHome()">Go Home</button>
 			</div>
 		</div>
     
