@@ -1,5 +1,8 @@
 
 // Array of Questions
+// ****** NOTE: Questions temporarilly 'Commented-Out' until the web developer is able to properly add them to the HTML. **********
+// Commented-out questions contain code or items that trigger the html to produce code, rather than the requested 'markType'
+// Web developer will come back to this project at a later date to attempt to update the game and correct the above bug.
 const quiz = [
 {
 	q: 'The full form of CSS is:',
