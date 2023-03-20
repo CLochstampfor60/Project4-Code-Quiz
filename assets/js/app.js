@@ -17,15 +17,22 @@ function setAvailableQuestions() {
 
 function getNewQuestion() {
 	questionNumber.innerHTML = "Question " + (questionCounter + 1) + " of " + quiz.length;
+	
 	const questionIndex = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
 	currentQuestion = questionIndex;
 	questionText.innerHTML = currentQuestion.q;
 	const index1 = availableQuestions.indexOf(questionIndex);
-	console.log(index1);
-	console.log(questionIndex);
+	availableQuestions.splice(index1, 1);
 
-
-	questionCounter++
+	const optionLen = currentQuestion.options.length;
+	for(let i=0; i<optionLen; i++) {
+		availableOptions.push(i);
+	}
+		// console.log(availableOptions);
+	// console.log(questionIndex);
+	// console.log(index1);
+	console.log(currentQuestion.options);
+	questionCounter++;
 }
 
 function next() {
