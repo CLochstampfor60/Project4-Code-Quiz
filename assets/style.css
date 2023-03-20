@@ -191,10 +191,14 @@ overflow: hidden;
 	height: 100%;
 	width: 100%;
 	background-color: green;
-	/* color: white; */
 	z-index: -1;
-	animation: slideInLeft .10s ease forwards;
+	animation: slideInLeft 10s ease forwards;
 }
+
+.quiz-box .option-container .option.already-answered {
+	pointer-events: none;
+}
+
 
 @keyframes slideInLeft {
 	0%{
@@ -202,32 +206,41 @@ overflow: hidden;
 	}
 	100% {
 		transform: translateX(0%);
-}
-
+	}
 }
 
 .quiz-box .option-container .option.correct {
-	color:hsl(0, 0%, 100%);
-}
-
-.quiz-box .option-container .option.wrong {
-
-}
-
-.quiz-box .option-container .option:hover {
-	background-color: black;
-	color: skyblue;
-}
-
-.quiz-box .option-container.option.correct {
 	color: black;
 	background-color: green;
 }
 
-.quiz-box .option-container.option.wrong {
+/* .quiz-box .option-container .option.wrong {
+
+} */
+
+.quiz-box .option-container .option.wrong:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	z-index: -1;
+	animation: slideInLeft .10s ease forwards;
+}
+
+.quiz-box .option-container .option.wrong {
 	color: black;
 	background-color: red;
 }
+
+
+/* Extra styling should I want to make the web application more responsive. */
+/* .quiz-box .option-container .option:hover {
+	background-color: black;
+	color: skyblue;
+} */
 
 /* Following adds correctly answered questions below Next Question button, not required. */
 /* .answers-indicator div{

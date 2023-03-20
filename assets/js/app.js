@@ -2,11 +2,15 @@
 const questionNumber = document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
 const optionContainer = document.querySelector(".option-container");
+const homePage = document.querySelector(".home-page")
+const quizPage = document.querySelector(".quiz-page")
+const resultPage = document.querySelector(".result-page")
 
 let questionCounter = 0;
 let currentQuestion;
 let availableQuestions = [];
 let availableOptions = [];
+let correctAnswers = 0;
 
 // push the questions into availableQuestionsArray.
 function setAvailableQuestions() {
@@ -34,7 +38,8 @@ function getNewQuestion() {
 		availableOptions.push(i);
 	}
 
-	// let animationDelay = 0.2;
+	optionContainer.innerHTML = '';
+	let animationDelay = 0.2;
 // Creates the options in html.
 	for(let i=0; i<optionsLen; i++) {
 		// Randomized option.
@@ -65,13 +70,24 @@ function getResult (element) {
 	console.log(typeof id);
 	// Compare the player's chosen answer to the correct answer in the availableIndex associated with question.
 	if (id === currentQuestion.answer) {
-		// A correct answer will turn the color of the chosen/clicked option 'green'.
-		element.classList.add("Correct answer!")
+		// A correct answer option chosen will turn to the color of 'color'.
+		element.classList.add("correct")
+		console.log("Correct: " + correctAnswers);
 	} else {
-		// A correct answer will turn the color of the chosen/clicked option 'red'.
-		element.classList.add("Wrong answer!")
+		// A wrong answer option chosen will turn to the color of 'red'.
+		element.classList.add("wrong")
+
+		unclickableOptions();
 	}
 
+}
+
+// Make all the options unlickable after one of the options are chosen. Restricts player from abusing the game's system to earn a higher score.
+function unclickableOptions() {
+const optionsLen = optionContainer.children.length;
+for (let i=0 ; i<optionsLen; i++) {
+		optionContainer.children[i].classList.add("already-answered");
+}
 }
 
 function next() {
@@ -81,6 +97,11 @@ function next() {
 	else{
 		getNewQuestion();
 	}
+}
+
+function quizOver {
+ quizPage.classList.add("hide");
+ resultPage.classList.remove("hide");
 }
 
 window.onload = function() {
