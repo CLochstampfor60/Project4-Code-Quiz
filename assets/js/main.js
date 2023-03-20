@@ -2,6 +2,7 @@
 const questionNumber = document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
 const optionContainer = document.querySelector(".option-container");
+const answersIndicatorContainer = document.querySelector(".answers-indicator");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
@@ -73,12 +74,13 @@ function getResult (element) {
 	if (id === currentQuestion.answer) {
 		// A correct answer option chosen will turn to the color of 'color'.
 		element.classList.add("correct");
-		// correctAnswers+++;
+		updateAnswerIndicator("correct");
+		correctAnswers++;
 		console.log("correct: " + correctAnswers);
 	} else {
 		// A wrong answer option chosen will turn to the color of 'red'.
 		element.classList.add("wrong")
-
+		updateAnswerIndicator("wrong");
 		unclickableOptions();
 	}
 }
@@ -91,9 +93,22 @@ function unclickableOptions() {
 	}
 }
 
+function answerIndicators() {
+	const totalQuestions = quiz.length;
+	for(let i=0; i<totalQuestions; i++) {
+		const indicator = document.createElement("div");
+		answersIndicatorContainer.appendChild(indicator);
+	}
+}
+
+function updateAnswerIndicator(markType) {
+	answersIndicatorContainer.children[questionCounter-1].classList.add(markType);
+}
+
 function next() {
 	if (questionCounter === quiz.length) {
-		console.log("quiz over")
+		// console.log("quiz over")
+		quizOver();
 	}
 	else{
 		getNewQuestion();
@@ -138,17 +153,10 @@ function startQuiz() {
 	quizBox.classList.remove("hide");
 	setAvailableQuestions();
 	getNewQuestion();
+	answerIndicators();
 
 }
 
 window.onload = function () {
-	homeBox.querySelector(".total-question").innerHTML = quiz.length;
+	homeBox.querySelector(".total-questions").innerHTML = quiz.length;
 }
-
-
-
-
-
-
-
-// console.log(quiz[0]);

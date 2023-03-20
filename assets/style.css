@@ -118,13 +118,20 @@ margin: 0;
 
 /* Settings for the question sections ------------------------------------------------------------------------- */
 .quiz-box {
+	margin-top: 10%;
+	left: 50%;
 	width: 800px;
 	max-width: 80%;
 	box-shadow: 0 0 10px 2px;
+		/* display: flex; */
+	/* padding: 0; */
+	/* width: 100vw; */
+	/* height: 100vh; */
+	/* justify-content: center;
+	align-items: center; */
 }
 
 /* Progress tracker within the game. */
-
 .quiz-box .question-number,
 .quiz-box .question-text,
 .quiz-box .next-question-btn,
@@ -255,7 +262,7 @@ overflow: hidden;
 
 /* Next Question Button at the bottom left of the card. */
 .quiz-box .next-question-btn {
-	text-align: center;
+	text-align: left;
 	margin: 0;
 	padding-top: 10px;
 }
@@ -318,6 +325,10 @@ overflow: hidden;
 
 /* Media responsive settings for mobile and handheld devices ---------------------------------------------------------- */
 @media (max-width: 690px) {
+.quiz-box {
+	margin-bottom: 30%;
+	}
+
   .btn {
     font-size: 1rem;
     margin: 16px 0px 0px 0px;
@@ -328,4 +339,8 @@ overflow: hidden;
   .btn {
     font-size: 0.8rem;
   }
+
+	.quiz-box {
+		margin-bottom: 30%;
+		}
 }
