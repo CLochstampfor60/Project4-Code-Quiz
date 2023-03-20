@@ -1,0 +1,335 @@
+
+***************************************************** CSS *****************************************************
+
+Q.1: The full form of CSS is:
+	option 0: Cascading Style Sheets (*)
+	option 1: Coloured Special Sheets
+	option 2: Color and Style Sheets
+	option 3: None of the above
+
+Q.2: How can we change the background color of an element?
+	option 0: background-color (*)
+	option 1: color
+	option 2: Both A and B
+	option 3: None of the above
+
+Q.3: How can we change the text color of an element?
+	option 0: background-color
+	option 1: color (*)
+	option 2: Both A and B
+	option 3: None of the above
+
+Q.4: In how many ways can CSS be written in?
+	option 0: 1
+	option 1: 2
+	option 2: 3 (*)
+	option 3: 4
+
+Q.5: What type of CSS is the following code snippet?
+	<h1 style="color:blue;">A Blue Heading</h1>
+	option 0: Inline (*)
+	option 1: Internal
+	option 2: External
+	option 3: None of the above
+
+Q.6: What type of CSS is generally recommended for designing large web pages?
+	option 0: Inline
+	option 1: Internal
+	option 2: External (*)
+	option 3: None of the above
+
+Q.7: Which HTML tag is used to declare internal CSS?
+	option 0: <style> (*)
+	option 1: <link>
+	option 2: <script>
+	option 3: None of the above 
+
+Q.8: How can we select an element with a specific ID in CSS?
+	option 0: # (*)
+	option 1: .
+	option 2: ^
+	option 3: None of the above
+
+Q.9: How can we select an element with a specific Class in CSS?
+	option 0: #
+	option 1: . (*)
+	option 2: ^
+	option 3: None of the above
+
+Q.10: How can we write comments in CSS?
+	option 0: /* */ (*)
+	option 1: //
+	option 2: #
+	option 3: All of the above
+
+Q.11: In the below code snippet, in what order will the margins be added?
+	p {
+  	   margin: 25px 50px 75px 100px;
+	 }
+	option 0: Top, Right, Bottom, Left (*)
+	option 1: Top, Left, Bottom, Right
+	option 2: Top, Bottom, Right, Left
+	option 3: Right, Left, Top, Bottom
+
+Q.12: Can negative values be allowed in padding property?
+	option 0: Yes
+	option 1: No (*)
+	option 2: Depends on property
+	option 3: None of the above
+
+Q.13: The CSS property used to specify the transparency of an element is?
+	option 0: opacity (*)
+	option 1: visibility
+	option 2: filter
+	option 3: None of the above
+
+Q.14: How can we specify the spacing between each letter in a text in CSS?
+	option 0: alpha-spacing
+	option 1: letter-spacing (*)
+	option 2: character-spacing
+	option 3: None of the above
+
+Q.15: What is the correct syntax for referring an external CSS?
+	option 0: <link rel="stylesheet" type="text/css" href="style.css"> (*)
+	option 1: <style rel="stylesheet" type="text/css" href="style.css">
+	option 2: Both A and B
+	option 3: None of the above
+
+***************************************************** HTML *****************************************************
+
+Q.16: HTML stands for -
+	option 0: HighText Machine Language
+	option 1: HyperText and links Markup Language
+	option 2: HyperText Markup Language (*)
+	option 3: None of these
+
+Q.17: The correct sequence of HTML tags for starting a webpage is -
+	option 0: Head, Title, HTML, body
+	option 1: HTML, Body, Title, Head
+	option 2: HTML, Head, Title, Body
+	option 3: HTML, Head, Title, Body (*)
+
+Q.18: Which of the following element is responsible for making the text bold in HTML?
+	option 0: <pre>
+	option 1: <a>
+	option 2: <b> (*)
+	option 3: <br>
+
+Q.19: Which of the following tag is used for inserting the largest heading in HTML?
+	option 0: <h3>
+ 	option 1: <h1> (*)
+	option 2: <h5>
+	option 3: <h5>
+
+Q.20: Which of the following tag is used to insert a line-break in HTML?
+	option 0: <br> (*)
+	option 1: <a>
+	option 2: <pre>
+	option 3: <b>
+
+Q.21: How to create an unordered list (a list with the list items in bullets) in HTML?
+	option 0: <ul> (*)
+	option 1: <ol>
+	option 2: <li>
+	option 3: <i>
+
+Q.22: Which character is used to represent the closing of a tag in HTML?
+	option 0: \
+	option 1: !
+	option 2: / (*)
+	option 3: .
+
+Q.23: How to create a hyperlink in HTML?
+	option 0: <a href = "www.javatpoint.com"> javaTpoint.com </a> (*)
+	option 1: <a url = "www.javatpoint.com" javaTpoint.com /a>
+	option 2: <a link = "www.javatpoint.com"> javaTpoint.com </a>
+	option 3: <a> www.javatpoint.com <javaTpoint.com /a>
+
+Q.24: How to create an ordered list (a list with the list items in numbers) in HTML?
+	option 0: <ul>
+	option 1: <ol> (*)
+	option 2: <li>
+	option 3: <i>
+
+Q.25: Which of the following element is responsible for making the text italic in HTML?
+	option 0: <i> (*)
+	option 1: <italic>
+	option 2: <it>
+	option 3: <pre>
+
+Q.26: How to insert an image in HTML?
+	option 0: <img href = "jtp.png" />
+	option 1: <img url = "jtp.png" />
+	option 2: <img link = "jtp.png" /> 
+	option 3: <img src = "jtp.png" /> (*)
+
+Q.27: How to add a background color in HTML?
+	option 0: <marquee bg color: "red">
+	option 1: <marquee bg-color = "red">
+	option 2: <marquee bgcolor = "red"> (*)
+	option 3: <marquee color = "red">
+
+Q.28: <input> is -
+	option 0: a format tag.
+	option 1: an empty tag.  (*)
+	option 2: All of the above
+	option 3: None of the above
+
+Q.29: Which of the following tag is used to make the underlined text?
+	option 0: <i>
+	option 1: <ul>
+	option 2: <u> (*)
+	option 3: <pre>
+
+Q.30: How to create a checkbox in HTML?
+	option 0: <input type = "checkbox">  (*)
+	option 1: <input type = "button">
+	option 2: <input type = "button">
+	option 3: <input type = "check">
+
+Q.31: Which of the following tag is used to define options in a drop-down selection list?
+	option 0: <select>
+	option 1: <list>
+	option 2: <dropdown>
+	option 3: <option> (*)
+
+***************************************************** Javascript *****************************************************
+
+Q.32: Javascript is an _______ language?
+	option 0: Object-Oriented (*)
+	option 1: Object-Based
+	option 2: Procedural
+	option 3: None of the above
+
+Q.33: Which of the following keywords is used to define a variable in Javascript?
+	option 0: var
+	option 1: let
+	option 2: Both A and B (*)
+	option 3: None of the above
+
+Q.34: Which of the following methods is used to access HTML elements using Javascript?
+	option 0: getElementbyId()
+	option 1: getElementsByClassName()
+	option 2: Both A and B (*)
+	option 3: None of the above
+
+Q.35: Upon encountering empty statements, what does the Javascript Interpreter do?
+	option 0: Throws an error
+	option 1: Ignores the statements (*)
+	option 2: Gives a warning
+	option 3: None of the above
+
+Q.36: Which of the following methods can be used to display data in some form using Javascript?
+	option 0: document.write()
+	option 1: console.log()
+	option 2: window.alert()
+	option 3: None of the above (*)
+
+Q.37: How can a datatype be declared to be a constant type?
+	option 0: const (*)
+	option 1: var 
+	option 2: let
+	option 3: constant
+
+Q.38: What will be the output of the following code snippet?
+	<script type="text/javascript">
+	a = 5 + "9";
+	document.write(a);
+	</script>
+	option 0: Compilation Error
+	option 1: 14
+	option 2: Runtime Error
+	option 3: 59 (*)
+
+Q.39: What will be the output of the following code snippet?
+	<script type="text/javascript" language="javascript">
+  	var a = "Scaler";
+	var result = a.substring(2, 4);
+	document.write(result);
+  	</script>
+	option 0: al (*)
+	option 1: ale
+	option 2: cal
+	option 3: caler
+
+Q.40: What will be the output of the following code snippet?
+	<script type="text/javascript" language="javascript">
+ 	var x=12;
+	var y=8;
+	var res=eval("x+y");
+	document.write(res);
+ 	</script>
+	option 0: 20 (*)
+	option 1: x+y
+	option 2: 128
+	option 3: None of the above
+
+Q.41: When the switch statement matches the expression with the given labels, how is the comparison done?
+	option 0: Both the datatype and the result of the expression are compared. (*)
+	option 1: Only the datatype of the expression is compared
+	option 2: Only the value of the expression is compared
+	option 3: None of the above
+
+Q.42: What keyword is used to check whether a given property is valid or not?
+	option 0: in (*)
+	option 1: is in
+	option 2: exists
+	option 3: lies
+
+Q.43: What is the use of the <noscript> tag in JavaScript?
+	option 0: The contents are displayed by non-JS-based browsers. (*)
+	option 1: Clears all the cookies and cache
+	option 2: Both A and B.
+	option 3: None of the above
+
+Q.44: What will be the output of the following code snippet?
+	(function(){
+ 	setTimeout(()=> console.log(1),2000);
+ 	console.log(2);
+ 	setTimeout(()=> console.log(3),0);
+ 	console.log(4);
+	})();
+	option 0: 1 2 3 4
+	option 1: 2 3 4 1
+	option 2: 2 4 3 1 (*)
+	option 3: 4 3 2 1
+
+Q.45: What will be the output of the following code snippet?
+	(function(a){
+	 return (function(){
+  	 	console.log(a);
+  	 	a = 6;
+ 	 })()
+	})(21);
+	option 0: 6
+	option 1: NaN
+	option 2: 21 (*)
+	option 3: None of the above
+
+Q.46: What will be the output of the following code snippet?
+	function solve(arr, rotations){
+ 	if(rotations == 0) return arr;
+ 	for(let i = 0; i < rotations; i++){
+  	 let element = arr.pop();
+  	 arr.unshift(element);
+ 	}
+ 	return arr;
+	}
+	// solve([44, 1, 22, 111], 5);
+	option 0: [111, 44, 1, 22] (*)
+	option 1: [44, 1, 22, 111]
+	option 2: [111, 44, 1, 22]
+	option 3: [1, 22, 111, 44]
+
+Q.47: What will be the output for the following code snippet?
+	<p id="example"></p>  
+	<script>  
+	function Func()  
+	{  
+	document.getElementById("example").innerHTML=Math.sqrt(81);  
+	}  
+	</script>
+	option 0: 9 (*)
+	option 1: 81
+	option 2: Error
+	option 3: 0

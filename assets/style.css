@@ -223,8 +223,37 @@ cursor: pointer;
 }
 
 /* Quiz Result table with option to add initials (or leave blank), and restart game or go to Home page. */
+.result-box {
+	text-align: center;
+}
+
+.result-box.hide{
+	display: none;
+}
+
+/* .result-box h1 {
+} */
+
+.result-box table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 30px 0;
+	background:hsl(0, 0%, 100%)
+}
+
+.result-box table td {
+	border: 5px solid black;
+	padding: 8px 15px;
+	font-weight: 500;
+	text-align: left;
+	font-size: 24px;
+}
+
+/* .result-box .btn {
+} */
+
 .result-box .end {
-	text-align: right;
+	text-align: center;
 	justify-content: space-between;
 	margin: 0;
 	padding-top: 10px;
