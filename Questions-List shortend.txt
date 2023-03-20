@@ -333,3 +333,9 @@ Q.47: What will be the output for the following code snippet?
 	option 1: 81
 	option 2: Error
 	option 3: 0
+
+
+
+
+
+
