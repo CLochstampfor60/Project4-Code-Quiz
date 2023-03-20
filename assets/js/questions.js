@@ -22,8 +22,7 @@ const quiz = [
 	answer: 3
 },
 {
-	q: 'What type of CSS is the following code snippet?'
-			'<h1 style="color:blue;">A Blue Heading</h1>',
+	q: 'What type of CSS is the following code snippet? <h1 style="color:blue;">A Blue Heading</h1>',
 	options: ['Inline', 'Internal', 'External', 'None of the above'],
 	answer: 0
 },
@@ -53,8 +52,7 @@ const quiz = [
 	answer: 0
 },
 {
-	q: 'In the below code snippet, in what order will the margins be added?'
-			'p {margin: 25px 50px 75px 100px;}',
+	q: 'In the below code snippet, in what order will the margins be added? p {margin: 25px 50px 75px 100px;}',
 	options: ['Top, Right, Bottom, Left', 'Top, Left, Bottom, Right', 'Top, Bottom, Right, Left', 'Right, Left, Top, Bottom'],
 	answer: 0
 },
@@ -115,11 +113,6 @@ const quiz = [
 },
 {
 	q: 'How to create a hyperlink in HTML?',
-	options: ['', '', '', ''],
-	answer:
-},
-{
-	q: 'How to create a hyperlink in HTML?',
 	options: ['<a href = "www.javatpoint.com"> javaTpoint.com </a>', '<a url = "www.javatpoint.com" javaTpoint.com /a>', '<a link = "www.javatpoint.com"> javaTpoint.com </a>', '<a> www.javatpoint.com <javaTpoint.com /a>'],
 	answer: 0
 },
@@ -146,7 +139,7 @@ const quiz = [
 {
 	q: '<input> is -',
 	options: ['a format tag', 'an empty tag', 'All of the above', 'None of the above'],
-	answer:
+	answer: 1
 },
 {
 	q: 'Which of the following tag is used to make the underlined text?',
@@ -161,7 +154,7 @@ const quiz = [
 {
 	q: 'Which of the following tag is used to define options in a drop-down selection list?',
 	options: ['<select>', '<list>', '<dropdown>', '<option>'],
-	answer:
+	answer: 3
 },
 {
 	q: 'Javascript is an _______ language?',
@@ -194,32 +187,17 @@ const quiz = [
 	answer: 1
 },
 {
-	q: 'What will be the output of the following code snippet?'
-			'<script type="text/javascript">'
-			'a = 5 + "9";'
-			'document.write(a);'
-			'</script>',
+	q: 'What will be the output of the following code snippet? <script type="text/javascript"> a = 5 + "9"; document.write(a); </script>',
 	options: ['Compilation Error', '14', 'Runtime Error', '59'],
 	answer: 3
 },
 {
-	q: ' What will be the output of the following code snippet?'
-	'<script type="text/javascript" language="javascript">'
-	'var a = "Scaler";'
-	'var result = a.substring(2, 4);''
-	'document.write(result);''
-	'</script>',
+	q: ' What will be the output of the following code snippet? <script type="text/javascript" language="javascript"> var a = "Scaler"; var result = a.substring(2, 4); document.write(result); </script>}',
 	options: ['al', 'ale', 'cal', 'caler'],
 	answer: 0
 },
 {
-	q: 'What will be the output of the following code snippet?'
-	'<script type="text/javascript" language="javascript">'
-		'var x=12;'
-		'var y=8;'
-		'var res=eval("x+y");'
-		'document.write(res);'
-		'</script>',
+	q: 'What will be the output of the following code snippet? <script type="text/javascript" language="javascript"> var x=12; var y=8; var res=eval("x+y"); document.write(res);  </script>',
 	options: ['20', 'x+y', '128', 'None of the above'],
 	answer: 0
 },
@@ -239,51 +217,23 @@ const quiz = [
 	answer: 0
 },
 {
-	q: 'What will be the output of the following code snippet?'
-	'(function(){'
-		'setTimeout(()=> console.log(1),2000);'
-		'console.log(2);'
-		'setTimeout(()=> console.log(3),0);'
-		'console.log(4);'
-		'})();',
+	q: 'What will be the output of the following code snippet? (function(){setTimeout(()=> console.log(1),2000); console.log(2); setTimeout(()=> console.log(3),0); console.log(4); })();',
 	options: ['1 2 3 4', '2 3 4 1', '2 4 3 1', '4 3 2 1'],
 	answer: 2
 },
 {
-	q: 'What will be the output of the following code snippet?'
-	'function solve(arr, rotations){'
-		'if(rotations == 0) return arr;'
-		'for(let i = 0; i < rotations; i++){'
-			'let element = arr.pop();'
-			'arr.unshift(element);'
-		'}'
-		'return arr;'
-		'}'
-		'solve([44, 1, 22, 111], 5);',
+	q: 'What will be the output of the following code snippet? function solve(arr, rotations){ if(rotations == 0) return arr; for(let i = 0; i < rotations; i++){ let element = arr.pop(); arr.unshift(element); } return arr; } solve([44, 1, 22, 111], 5);',
 	options: ['[111, 44, 1, 22]', '[44, 1, 22, 111]', '[111, 44, 1, 22]', '[1, 22, 111, 44]'],
 	answer: 0
 },
 
 {
-	q: 'What will be the output of the following code snippet?'
-	'<p id="example"></p>'
-	'<script>'
-	'function Func()'
-	'{' 
-	'document.getElementById("example").innerHTML=Math.sqrt(81);'  
-	'}'
-	'</script>',
+	q: 'What will be the output of the following code snippet? <p id="example"></p> <script> function Func() { document.getElementById("example").innerHTML=Math.sqrt(81); } </script>',
 	options: ['9', '81', 'Error', '0'],
 	answer: 0
 },
 {
-	q: 'What will be the output of the following code snippet?'
-	'(function(a){'
-		'return (function(){'
-				'console.log(a);'
-				'a = 6;'
-			'})()'
-		'})(21);',
+	q: 'What will be the output of the following code snippet? (function(a){ return (function(){ console.log(a); a = 6; })() )(21);',
 	options: ['6', 'NaN', '21', 'None of the above'],
 	answer: 2
 },
