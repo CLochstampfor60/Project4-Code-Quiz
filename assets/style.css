@@ -116,6 +116,15 @@ margin: 0;
 	text-decoration: underline;
 }
 
+.home-box .high-score-container .btn:hover {
+	background-color: var(--btn-text) ;
+	color: var(--btn-background);
+	font-size: 26px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+}
+
 /* Settings for the question sections ------------------------------------------------------------------------- */
 .quiz-box {
 	margin-top: 10%;

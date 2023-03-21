@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<!-- ************************************ CSS and Google Font Styling Links ************************************ -->			
 		<link rel="stylesheet" href="assets/style.css" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +18,7 @@
   </head>
 
 <body>
+<!-- ************************************ Home and Instructions Page ************************************ -->
 	<div class="home-box custom-box">
 		<h1 class="top-p">Coding Quiz<br></h1>
 		<p style="text-indent: 25px;">Embark on an amazing yet dangerous multiple-choice question adventure in the magical world of 'Coding.'</p><br>
@@ -40,8 +43,23 @@
 			<div class="btn-container">
 				<button type ="button" class="btn" onclick="startQuiz()">Start Quiz</button>
 			</div>
+			<div class="high-score-container">
+				<button type ="button" class="btn" onclick="viewHighScore()">View High Scores</button>
+			</div>
 		</div>
+<!-- ************************************ Home and Instructions Page ************************************ -->		
 
+<!-- *************************** High Score Page *************************** -->
+		<div class="high-score-box custom-box hide">
+			<h2 class="instructions">High Scores:</h2>
+
+			<div class="end">
+				<button type="button" class="btn" onclick="goHome()">Go Home</button>
+			</div>
+		</div>
+<!-- *************************** High Score Page *************************** -->
+
+<!-- *************************** Quiz Pages *************************** -->
 		<div class="quiz-box custom-box hide">
 				<div class="question-number"></div>
 
@@ -55,7 +73,9 @@
 
 				<div class="answers-container"> </div>
 		</div>
+<!-- *************************** Quiz Pages *************************** -->
 
+<!-- *************************** Quiz Result Page *************************** -->
 		<div class="result-box custom-box hide">
 			<h1>Quiz Result</h1>
 			<table>
@@ -83,9 +103,13 @@
 				<button type="button" class="btn" onclick="tryAgainQuiz()">Venture Again?</button>
 				<button type="button" class="btn" onclick="goHome()">Go Home</button>
 			</div>
+<!-- *************************** Quiz Result Page *************************** -->
+
 		</div>
     
 </body>
+
+<!-- *************************** Java Script Links to Functions and Questions List *************************** -->
 	<script src="assets/js/questions.js"></script>
 	<script src="assets/js/main.js"></script>
 </html>

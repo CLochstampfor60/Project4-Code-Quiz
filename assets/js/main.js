@@ -6,6 +6,7 @@ const answersContainer = document.querySelector(".answers-container");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
+const highScoreBox = document.querySelector(".high-score-box");
 
 let questionCounter = 0;
 let currentQuestion;
@@ -21,7 +22,7 @@ function setAvailableQuestions() {
 	}
 }
 
-// Get a new question.
+// Get a new question from the questions.js list.
 function getNewQuestion() {
 	questionNumber.innerHTML = "Question " + (questionCounter + 1) + " of " + quiz.length;
 	
@@ -159,7 +160,13 @@ function startQuiz() {
 	setAvailableQuestions();
 	getNewQuestion();
 	answerIndicators();
+}
 
+function viewHighScore() {
+	homeBox.classList.add("hide");
+	quizBox.classList.add("hide");
+	resultBox.classList.add("hide");
+	highScoreBox.classList.remove("hide");
 }
 
 window.onload = function () {
