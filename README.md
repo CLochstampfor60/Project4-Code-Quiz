@@ -1,53 +1,53 @@
-# Challenge 4: Code Quiz
+# Challenge 4: Build a Code Quiz
 
 ## Description:
-* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+* Built with the following tools: HTML, CSS, JavaScript and Web APIs.
 
-* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+* <u>Short-Term Goal:</u> Build a Code Quiz from scratch (i.e., 'from cradle-to-grave') to increase and retain one's Coding knowledge.
+
+* <u>Long-Term Goal:</u> In the pursuit of becoming a full-stack web developer, the Code Quiz will help ready and prepare a person for obtaining gainful employment when he or she is asked by gainful employers to complete a coding assessment(s) as part of the interview process.
 
 ___
 
 ## User Story:
-* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
-* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+* AS A coding boot camp student,
+* I WANT to take a timed quiz on JavaScript fundamentals that stores high scores,
+* SO THAT I can gauge my progress compared to my peers.
 
 ___
 
 ## Acceptance Criteria:
-<u>GIVEN</u> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ...
+<u>GIVEN</u> I am taking a code quiz...
 
-* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN</i> I click the start button,
+<br><b>THEN </b>a timer starts and I am presented with a question.
 
-* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN</i> I answer a question,
+<br><b>THEN </b>I am presented with another question.
 
-* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN</i> I answer a question incorrectly,
+<br><b>THEN </b>time is subtracted from the clock.
 
-* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN</i> all questions are answered or the timer reaches 0,
+<br><b>THEN </b>the game is over.
 
-* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
-<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
+* <i>WHEN</i> the game is over,
+<br><b>THEN </b>I can save my initials and my score.
 
 ___
 
 ## Completed Work:
-* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+* Created a list of potential questions and tasks a user may be asked to complete during the interview process within the full-stack development role (or Coding world).
 
-* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+* The application's home page provides a jovial introduction, along with a detailed list of instructions on how to navigate the Code Quiz.
 
-* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+* The user will have several answer options to choose from, and once a choice is clicked, the user will receive an immediate response if his or her choice is correct or incorrect (i.e., 'green' or 'red' colors). Note: if the user chooses the incorrect option, the correct answer choice will NOT be revealed (to increase the difficulty of the quiz and to better simulate a real-world interview testing experience).
 
-* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+* Once the game starts, the timer will start. If there are any questions answered incorrect/wrong by the user, then time will deduct from the timer.
 
-* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+* At the end of the game, whether or not the user answers all the questions, a final score-sheet ('Quiz Result') web-card will pop-up with the user's results.
 
-* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-
-* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+* The user will have the option to add his or her initials to the log, and the user will have the choice to restart and try again the Code Quiz, or return to the Home Page.
 
 ___
 
