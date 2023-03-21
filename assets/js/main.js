@@ -106,7 +106,7 @@ function answerIndicators() {
 }
 // Changes the text to show 'correct/wrong' instead of other words or numbers on the console.
 function updateAnswerIndicator(markType) {
-	answersIndicatorContainer.children[questionCounter-1].classList.add(markType);
+	answersContainer.children[questionCounter-1].classList.add(markType);
 }
 // Method to continue the game based on the remaining questions left. Once complete, the game is over.
 function next() {
