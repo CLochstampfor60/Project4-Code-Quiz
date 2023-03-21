@@ -1,99 +1,75 @@
-# 04 Web APIs: Code Quiz
+# Challenge 4: Code Quiz
 
-## Your Task
+## Description:
+* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
+* bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+___
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+## User Story:
+* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+* eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
 
-## User Story
+___
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## Acceptance Criteria:
+<u>GIVEN</u> aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa ...
 
-## Acceptance Criteria
+* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
+<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-```
+* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
+<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
 
-## Mock-Up
+* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
+<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
 
-The following animation demonstrates the application functionality:
+* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
+<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
 
-![A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.](./Assets/04-web-apis-homework-demo.gif)
+* <i>WHEN</i> RRRRRRRRRRRRRRRRRRRRRRRR,
+<br><b>THEN</b>TTTTTTTTTTTTTTTTTTTTTTTTTTTT.
 
-## Grading Requirements
+___
 
-> **Note**: If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
->
-> * A repository that has no code
->
-> * A repository that includes a unique name but nothing else
->
-> * A repository that includes only a README file but nothing else
->
-> * A repository that only includes starter code
+## Completed Work:
+* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
-This Challenge is graded based on the following criteria: 
+* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
-### Technical Acceptance Criteria: 40%
+* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
-* Satisfies all of the preceding acceptance criteria.
+* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
-### Deployment: 32%
+* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
-* Application deployed at live URL.
+* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
-* Application loads with no errors.
+* zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
-* Application GitHub URL submitted.
+___
 
-* GitHub repository contains application code.
+## Student's Submitted Work:
 
-### Application Quality: 15%
+* URL of the <u>deployed application</u>: [Locky's Code Quiz](https://clochstampfor60.github.io/Project4-Code-Quiz/)
 
-* Application user experience is intuitive and easy to navigate.
 
-* Application user interface style is clean and polished.
+* URL of the application's <u>GitHub Repository</u>: [CLocky60](https://github.com/CLochstampfor60/Project4-Code-Quiz)
 
-* Application resembles the mock-up functionality provided in the Challenge instructions.
+___
 
-### Repository Quality: 13%
+## Final Product
 
-* Repository has a unique name.
+* Insert screenshot images here!!!!!!!!!!!!!!!!!!!!!!!!!
 
-* Repository follows best practices for file structure and naming conventions.
+![Final-Product](add image here, but note that you may need to upload the images separate to pull from GitHub rep itself.
+		If you don't see the images on your html, that's because the path is to your local path)
+___
 
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 
-* Repository contains multiple descriptive commit messages.
+## License
+This project is licensed under the terms of the MIT license.
 
-* Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-## Review
-
-You are required to submit BOTH of the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
-
----
-
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+***
