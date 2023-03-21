@@ -1,8 +1,8 @@
 // Starting work, constants to use later in the functions below.
 const questionNumber = document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
-const optionContainer = document.querySelector(".option-container");
-const answersIndicatorContainer = document.querySelector(".answers-indicator");
+const optionsContainer = document.querySelector(".option-container");
+const answersContainer = document.querySelector(".answers-container");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
@@ -40,7 +40,7 @@ function getNewQuestion() {
 	}
 
 	// Loads to the html the animation that generates when a physical choice is made on the Quiz Box.
-	optionContainer.innerHTML = '';
+	optionsContainer.innerHTML = '';
 	let animationDelay = 0.3;
 
 // Creates the options in html (aka, answer choices to the question on the screen pop-up).
@@ -58,7 +58,7 @@ function getNewQuestion() {
 		// animationDelay = animationDelay + 0.2;
 		option.id = optionsIndex;
 		option.className = "option";
-		optionContainer.appendChild(option);
+		optionsContainer.appendChild(option);
 		option.setAttribute("onclick", "getResult(this)");
 	}
 
@@ -89,9 +89,9 @@ function getResult (element) {
 
 // Make all the options unclickable after the user makes a choice. Restricts player from abusing the game's system to earn a higher score.
 function unclickableOptions() {
-	const optionsLen = optionContainer.children.length;
+	const optionsLen = optionsContainer.children.length;
 	for (let i=0 ; i<optionsLen; i++) {
-			optionContainer.children[i].classList.add("already-answered");
+			optionsContainer.children[i].classList.add("already-answered");
 	}
 }
 
@@ -101,7 +101,7 @@ function answerIndicators() {
 	const totalQuestions = quiz.length;
 	for(let i=0; i<totalQuestions; i++) {
 		const indicator = document.createElement("div");
-		answersIndicatorContainer.appendChild(indicator);
+		answersContainer.appendChild(indicator);
 	}
 }
 // Changes the text to show 'correct/wrong' instead of other words or numbers on the console.
