@@ -80,6 +80,7 @@ p.wizard {
 	line-height: 30px;
 }
 
+/* Button CSS, starting with Start Quiz on the Home Page */
 .btn-container {
 text-align: center;
 margin: 0;
@@ -116,13 +117,59 @@ margin: 0;
 	text-decoration: underline;
 }
 
-.home-box .high-score-container .btn:hover {
+/* High-Score button, when pressed, goes to the High Score Box */
+.high-score-box .btn {
+	text-align: center;
+	margin: 0;
+	}
+
+.high-score-box .btn-container .btn {
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.high-score-box .btn-container .btn:hover {
 	background-color: var(--btn-text) ;
 	color: var(--btn-background);
 	font-size: 26px;
 	font-weight: bold;
 	font-style: italic;
 	text-decoration: underline;
+}
+
+/* High-Score Box Table and list of information. */
+.high-score-box {
+	text-align: center;
+}
+
+/* .high-score-box .high-score-box.hide{
+	display: none;
+} */
+
+.high-score-box table {
+	text-align: center;
+	width: 70%;
+	border-collapse: collapse;
+	margin: 30px 0;
+	background:hsl(0, 0%, 100%)
+}
+
+.high-score-box table th {
+	border: 5px solid black;
+	padding: 8px 15px;
+	font-weight: 500;
+	text-align: center;
+	font-size: 24px;
+}
+
+/* .high-score-box table tc {
+	border: 5px solid black;
+
+} */
+
+.high-score-box table td {
+	border: 5px solid black;
 }
 
 /* Settings for the question sections ------------------------------------------------------------------------- */
@@ -310,7 +357,6 @@ overflow: hidden;
 	text-decoration: underline;
 }
 
-
 /* Media responsive settings for mobile and handheld devices ---------------------------------------------------------- */
 @media (max-width: 690px) {
 .quiz-box {
@@ -331,4 +377,4 @@ overflow: hidden;
 	.quiz-box {
 		margin-bottom: 30%;
 		}
-}
+	}

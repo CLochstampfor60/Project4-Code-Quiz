@@ -62,10 +62,8 @@ ___
 
 ## Final Product
 
-* Insert screenshot images here!!!!!!!!!!!!!!!!!!!!!!!!!
-
-![Final-Product](add image here, but note that you may need to upload the images separate to pull from GitHub rep itself.
-		If you don't see the images on your html, that's because the path is to your local path)
+![Start](assets\images\Home-Page.jpg)
+![End](assets\images\Quiz-Result-Page.jpg)
 ___
 
 

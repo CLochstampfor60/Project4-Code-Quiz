@@ -155,8 +155,8 @@ function goHome() {
 
 // --------------------------Starting Point for the entire game and resetting it.------------------------
 function startQuiz() {
-	homeBox.classList.add("hide");
 	quizBox.classList.remove("hide");
+	homeBox.classList.add("hide");
 	setAvailableQuestions();
 	getNewQuestion();
 	answerIndicators();
@@ -164,9 +164,12 @@ function startQuiz() {
 
 function viewHighScore() {
 	homeBox.classList.add("hide");
-	quizBox.classList.add("hide");
-	resultBox.classList.add("hide");
 	highScoreBox.classList.remove("hide");
+}
+
+function goHome2() {
+	highScoreBox.classList.add("hide");
+	homeBox.classList.remove("hide");
 }
 
 window.onload = function () {
