@@ -62,8 +62,8 @@ ___
 
 ## Final Product
 
-![Start](assets\images\Home-Page.jpg)
-![End](assets\images\Quiz-Result-Page.jpg)
+![Start](https://github.com/CLochstampfor60/Project4-Code-Quiz/blob/main/assets/images/Home-Page.jpg)
+![End](https://github.com/CLochstampfor60/Project4-Code-Quiz/blob/main/assets/images/Quiz-Result-Page.jpg)
 ___
 
 
