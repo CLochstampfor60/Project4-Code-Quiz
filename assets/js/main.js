@@ -23,7 +23,7 @@ var timeEl = document.querySelector(".time");
 
 // Selects element by id
 var mainEl = document.getElementById("main");
-var secondsLeft = 10;
+var secondsLeft = 60;
 
 function setTime() {
   // Sets interval in variable
@@ -35,28 +35,26 @@ function setTime() {
       // Stops execution of action at set interval
       clearInterval(timerInterval);
       quizOver();
-			returnInterval()
     }
-
   }, 1000);
 }
 
 setTime();
 
-function stoppedTimer() {console.log('btn-reset');}
+// function stoppedTimer() {console.log('btn-reset');}
 
-var myTimer = setInterval(stoppedTimer, 1000);
+// var myTimer = setInterval(stoppedTimer, 1000);
 
-// Then, later at some future time, 
-// to restart a new 4 second interval starting at this exact moment in time
-clearInterval(myTimer);
-myTimer = setInterval(stoppedTimer, 1000);
+// // Then, later at some future time, 
+// // to restart a new 4 second interval starting at this exact moment in time
+// clearInterval(myTimer);
+// myTimer = setInterval(stoppedTimer, 1000);
 
 
-// if (quizOver() {
-// 	clearInterval(timerInterval);
-// 	setTime();
-// }
+// // if (quizOver() {
+// // 	clearInterval(timerInterval);
+// // 	setTime();
+// // }
 
 // ---------------push the questions into availableQuestionsArray.
 function setAvailableQuestions() {

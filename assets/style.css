@@ -244,7 +244,7 @@ margin: 0;
 .quiz-box .question-number,
 .quiz-box .question-text,
 .quiz-box .next-question-btn,
-.quiz-box .option-container, {
+.quiz-box .option-container {
 	width: 100%;
 	float: left;
 }
