@@ -7,6 +7,7 @@ const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
 const highScoreBox = document.querySelector(".high-score-box");
+const btnReset = document.querySelector("btn-reset");
 
 let questionCounter = 0;
 let currentQuestion;
@@ -14,6 +15,48 @@ let availableQuestions = [];
 let availableOptions = [];
 let correctAnswers = 0;
 let wrongAnswers = 0;
+// let timeLeft = 60;
+
+// Timer Interval starts when the 'Start Quiz' button is clicked by the user/player.
+// Selects element by class
+var timeEl = document.querySelector(".time");
+
+// Selects element by id
+var mainEl = document.getElementById("main");
+var secondsLeft = 10;
+
+function setTime() {
+  // Sets interval in variable
+  var timerInterval = setInterval(function() {
+    secondsLeft--;
+    timeEl.textContent = secondsLeft + " seconds left";
+
+    if(secondsLeft === 0) {
+      // Stops execution of action at set interval
+      clearInterval(timerInterval);
+      quizOver();
+			returnInterval()
+    }
+
+  }, 1000);
+}
+
+setTime();
+
+function stoppedTimer() {console.log('btn-reset');}
+
+var myTimer = setInterval(stoppedTimer, 1000);
+
+// Then, later at some future time, 
+// to restart a new 4 second interval starting at this exact moment in time
+clearInterval(myTimer);
+myTimer = setInterval(stoppedTimer, 1000);
+
+
+// if (quizOver() {
+// 	clearInterval(timerInterval);
+// 	setTime();
+// }
 
 // ---------------push the questions into availableQuestionsArray.
 function setAvailableQuestions() {
@@ -137,11 +180,15 @@ function quizResult () {
 	// resultBox.querySelector(".your-initials").innerHTML = 
 }
 
-// ---------------Buttons 
+// --------------- Buttons section
 
 function resetQuiz() {
 	questionCounter = 0;
 	correctAnswers = 0;
+	// secondsLeft = 60;
+	// timeLeft = 60
+	clearTimeout(secondsLeft);
+
 }
 
 function tryAgainQuiz() {

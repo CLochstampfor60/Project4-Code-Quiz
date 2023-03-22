@@ -52,11 +52,20 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
 	font-family: var(--title-font);
 	text-align: center;
+	text-decoration: underline;
+	padding-bottom: 10px;
+	color: #FDEE73;
+	text-shadow: 2px 2px #ff0000;
+}
+
+h3,
+h4,
+h5 {
+	font-family: var(--title-font);
+	text-align: right;
 	text-decoration: underline;
 	padding-bottom: 10px;
 	color: #FDEE73;
