@@ -3,11 +3,10 @@
   <head>
 		<title>Locky's Code Quiz</title>
     <meta charset="UTF-8" />
-		<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<!-- ************************************ CSS and Google Font Styling Links ************************************ -->			
+<!-- ------------------------ CSS and Google Font Styling Links ------------------------ -->			
 		<link rel="stylesheet" href="assets/style.css" />
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +18,7 @@
   </head>
 
 <body>
-<!-- ************************************ Home and Instructions Page ************************************ -->
+<!-- ------------------------ Home and Instructions Page ------------------------ -->
 	<div class="home-box custom-box">
 		<h1 class="top-p">Coding Quiz<br></h1>
 		<p style="text-indent: 25px;">Embark on an amazing yet dangerous multiple-choice question adventure in the magical world of 'Coding.'</p><br>
@@ -31,50 +30,48 @@
 		<h2 class="instructions">Instructions:</h2>
 				<p> 
 					<ul>
-						<li>You've got <u><span class="total-time">3 minutes</span></u> (timer seen at the top-right of the screen) to complete <u><span class="total-questions"></span> questions.</u></li>
+						<li>You've got <u><span class="total-time">60 seconds</span></u> (timer seen at the top-right of the screen) to complete all, or as many as you can, of the <u><span class="total-questions"></span> questions.</u></li>
 						<li>Each question provides four (4) different options to choose from.</li>
 						<li>If you choose correctly, you will get <u>one (1)</u> point.</li>
 						<li>If you choose wrong, you will get <u>zero (0)</u> points, <br><u>AND</u> suffer <u>'timer-burn'</u> (aka, time-stolen and deducted from the ticking-down clock).</li>
 						<li>At the end of the Quiz, your total score will be displayed. Maximum score is <u>24 points</u>.</li>
+						<li>On the 'Quiz Result' page, type your initials and click 'Add' to save and log your score on the leader-board, .</li>
+						<li>Otherwise, you may leave the input section 'Blank', and no data will be saved to the leader-board on the High-Scores page.</li>
 					</ul>
 				</p><br>
 
 				<p style="text-align: center;">Click <u>'Start Quiz'</u>to find out if you're worthy enough to be crowned the next <u>Coding Wizard Champion!!!!!</u></p>
-				
 				<p class="wizard">🔥🔥🧙🧙🧙🧙🧙🧙🧙🔥🔥</p>
-
-			<div class="btn-container">
-				<button type ="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+				<div class="btn-container">
+					<button type ="button" class="btn" onclick="viewHighScore()">View High Scores</button>
+					<button type ="button" class="btn" onclick="startQuiz()">Start Quiz</button>
+				</div>				
 			</div>
 			
-			<div class="btn-container">
-				<button type ="button" class="btn" onclick="viewHighScore()">View High Scores</button>
-			</div>
 		</div>
 
-<!-- ********************************* High Score Page ********************************* -->
+<!-- ------------------------ High Score Page ------------------------ -->
 		<div class="high-score-box custom-box hide">
 			<h1 class="high-scores">High Scores:</h1>
-
-			</table> -->
-			<table>
-				<tr>
-					<th>Initials</th>
-					<th>High Score</th>
-				</tr>
-				<tr>
-					<td><span class="saved-initials">aaaaaaa</span></td>
-					<td><span class="initials-high-score">bbbbbbb</span></td>
-				</tr>
-			</table>
-
-			<!-- <div class="end"> -->
+				<table>
+					<tr>
+						<th><strong>Initials</strong></th>
+						<th><strong>High Score</strong></th>
+					</tr>
+					<tr>
+						<td><span id="saved-initials"></span></td>
+						<td><span id="saved-score"></span></td>
+					</tr>
+				</table>
+			<!-- <div class="end">
+				<button type="button" class="btn" onclick="goHome()">Go Home</button>
+			</div> -->
 			<div class="btn-container">
 				<button type="button" class="btn" onclick="goHome2()">Go Home</button>
 			</div>
 		</div>
 
-<!-- ********************************* Quiz Page ********************************* -->
+<!-- ------------------------ Quiz Pages ------------------------ -->
 		<div class="quiz-box custom-box hide">
 				<div class="question-number"></div>
 
@@ -89,7 +86,7 @@
 				<div class="answers-container"> </div>
 		</div>
 
-<!-- ****************************** Results of Quiz Page *************************** -->
+<!-- ------------------------ Result Page ------------------------ -->
 		<div class="result-box custom-box hide">
 			<h1>Quiz Result</h1>
 			<table>
@@ -99,7 +96,7 @@
 				</tr>
 				<tr>
 					<td>Correct</td>
-					<td><span class="total-correct"></span></td>
+					<td><span class="total-correct" id="pull-score"></span></td>
 				</tr>
 				<tr>
 					<td>Wrong</td>
@@ -109,9 +106,19 @@
 					<td>Your Total Score</td>
 					<td><span class="total-score"></span></td>
 				</tr>
-					<td>Your Initials</td>
-					<td><span class="your-initials"></span></td>
+<!-- ------------------------------------------------------------------------ -->
+					<td>Your Initials (2 to 4 characters):
+						<button id="save">Save</button>
+					</td>
+					<td><span class="your-initials">
+						<label for="name">
+							<input type="text" id="initials" required minlength="2" maxlength="4" size="6">
+							<!-- name="name"  -->
+						</label>
+						</span>
+					</td>
 				</tr>
+<!--------------------------------------------------------------------------  -->
 			</table>
 			<div class="end">
 				<button type="button" class="btn" onclick="tryAgainQuiz()">Venture Again?</button>
@@ -122,7 +129,7 @@
     
 </body>
 
-<!-- *************************** Java Script Links to Functions and Questions List *************************** -->
+<!-- ------------------------ Java Script Links to Functions and Questions List ------------------------ -->
 	<script src="assets/js/questions.js"></script>
 	<script src="assets/js/main.js"></script>
 </html>

@@ -1,4 +1,4 @@
-/* Root settings for multiple uses within entire web application -------------------------------------------------- */
+/*------------------ Root settings for multiple uses within entire web application ------------------- */
 :root {
 	--title-font: 'MedievalSharp', cursive;
 	--text-font: 'Almendra', serif;
@@ -6,7 +6,7 @@
 	--btn-background: hsl(360, 91%, 36%);
 }
 
-/* Home page and foundational settings for entire web application ----------------------------------------------------------*/
+/*------------------------ Home page, buttons and foundational settings for entire web application ---------------------------*/
 body {
 	margin: 0;
 	font-size: 22px;
@@ -72,6 +72,8 @@ h4 {
 	padding-top: 15px;
 }
 
+/* ------------------------ Emoji and bottom Buttons to navigate to Start Quiz and High Scores */
+
 p.wizard {
 	text-align: center;
 	margin: 8px;
@@ -80,7 +82,6 @@ p.wizard {
 	line-height: 30px;
 }
 
-/* Button CSS, starting with Start Quiz on the Home Page */
 .btn-container {
 text-align: center;
 margin: 0;
@@ -117,7 +118,16 @@ margin: 0;
 	text-decoration: underline;
 }
 
-/* High-Score button, when pressed, goes to the High Score Box */
+.home-box .high-score-container .btn:hover {
+	background-color: var(--btn-text) ;
+	color: var(--btn-background);
+	font-size: 26px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/*------------------------ High-Score button, when pressed, goes to the High Score Box */
 .high-score-box .btn {
 	text-align: center;
 	margin: 0;
@@ -138,9 +148,31 @@ margin: 0;
 	text-decoration: underline;
 }
 
-/* High-Score Box Table and list of information. */
+/* High-Score button, when pressed, goes to the High Score Box */
+/* .high-score-box .btn {
+	text-align: center;
+	margin: 0;
+	}
+
+.high-score-box .btn-container .btn {
+	text-align: center;
+	margin: 0;
+	padding-top: 10px;
+}
+
+.high-score-box .btn-container .btn:hover {
+	background-color: var(--btn-text) ;
+	color: var(--btn-background);
+	font-size: 26px;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+} */
+
+/*------------------------ High-Score Box Table and list of information. */
 .high-score-box {
 	text-align: center;
+	justify-content: center;
 }
 
 /* .high-score-box .high-score-box.hide{
@@ -149,10 +181,11 @@ margin: 0;
 
 .high-score-box table {
 	text-align: center;
-	width: 70%;
+	width: 80%;
 	border-collapse: collapse;
 	margin: 30px 0;
-	background:hsl(0, 0%, 100%)
+	margin-left: 80px;
+	background:hsl(0, 0%, 100%);
 }
 
 .high-score-box table th {
@@ -170,9 +203,20 @@ margin: 0;
 
 .high-score-box table td {
 	border: 5px solid black;
+	font-weight: 400;
+	font-size: 20px;
+	
 }
 
-/* Settings for the question sections ------------------------------------------------------------------------- */
+#msg {
+  display: block;
+  min-height: 100px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: whitesmoke;
+}
+
+/*------------------------ Settings for the question sections ------------------------------------------------------------------------- */
 .quiz-box {
 	margin-top: 10%;
 	left: 50%;
@@ -187,7 +231,7 @@ margin: 0;
 	align-items: center; */
 }
 
-/* Progress tracker within the game. */
+/*------------------------ Quiz Box Container dimensions */
 .quiz-box .question-number,
 .quiz-box .question-text,
 .quiz-box .next-question-btn,
@@ -212,7 +256,7 @@ margin: 0;
 	font-weight: 400px;
 }
 
-/* Question in the middle of the page */
+/*------------------------ Question in the middle of the page */
 .quiz-box .question-text {
 	color: black; 
 	/* text-shadow: 2px 2px black; */
@@ -222,7 +266,7 @@ margin: 0;
 	padding-top: 10px;
 }
 
-/* List of four possible answer choices for the player to choose from. */
+/*--------------- List of four possible answer choices for the player to choose from, and responsiveness. */
 .quiz-box .option-container {
 	text-align: left;
 	font-size: 24px;
@@ -295,7 +339,7 @@ overflow: hidden;
 }
 
 
-/* Next Question Button at the bottom left of the card. */
+/*------------------------ Next Question Button at the bottom left of the card. */
 .quiz-box .next-question-btn {
 	text-align: left;
 	margin: 0;
@@ -311,7 +355,7 @@ overflow: hidden;
 	text-decoration: underline;
 }
 
-/* Quiz Result table with option to add initials (or leave blank), and restart game or go to Home page. */
+/* --------------- Quiz Result table with option to add initials (or leave blank), and restart game or go to Home page. ---------------- */
 .result-box {
 	text-align: center;
 }
@@ -338,8 +382,24 @@ overflow: hidden;
 	font-size: 24px;
 }
 
-/* .result-box .btn {
-} */
+/* Initials input section */
+label {
+	display: block;
+	font: 1rem 'Fira Sans', sans-serif;
+}
+
+input,
+label {
+	margin: 0.4rem 0;
+}
+
+/*----------------------- Buttons on the Quiz Results page */
+#save {
+	cursor: pointer;
+	padding: 7px;
+	margin-left: 23px;
+	font-size: 0.75em;
+}
 
 .result-box .end {
 	text-align: center;
@@ -357,7 +417,8 @@ overflow: hidden;
 	text-decoration: underline;
 }
 
-/* Media responsive settings for mobile and handheld devices ---------------------------------------------------------- */
+
+/*------------------------ Media responsive settings for mobile and handheld devices ---------------------------------------------------------- */
 @media (max-width: 690px) {
 .quiz-box {
 	margin-bottom: 30%;
@@ -377,4 +438,4 @@ overflow: hidden;
 	.quiz-box {
 		margin-bottom: 30%;
 		}
-	}
+}
