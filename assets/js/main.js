@@ -289,6 +289,7 @@ function viewHighScore() {
 function goHome2() {
 	highScoreBox.classList.add("hide");
 	homeBox.classList.remove("hide");
+	resultBox.classList.add("hide");
 }
 // function startQuiz() {
 // 	homeBox.classList.add("hide");
