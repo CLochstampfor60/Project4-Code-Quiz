@@ -1,4 +1,5 @@
 // ---------------Starting work, constants to use later in the functions below.
+const quizTime = document.querySelector(".total-time");
 const questionNumber = document.querySelector(".question-number");
 const questionText = document.querySelector(".question-text");
 const optionsContainer = document.querySelector(".option-container");
@@ -23,19 +24,26 @@ var timeEl = document.querySelector(".time");
 
 // Selects element by id
 var mainEl = document.getElementById("main");
-var secondsLeft = 60;
+var secondsLeft = 30;
+
+quizTime.textContent = secondsLeft + " seconds."
 
 function setTime() {
   // Sets interval in variable
   var timerInterval = setInterval(function() {
-    secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left";
-
-    if(secondsLeft === 0) {
+		if (secondsLeft > 1) {
+			timeEl.textContent = secondsLeft + " seconds remaining";
+			secondsLeft--;
+		} else if
+			(secondsLeft === 1) {
+			timeEl.textContent = secondsLeft + " second remaining";
+			secondsLeft--;
+		} else {
+			secondsLeft.textContent = '';
       // Stops execution of action at set interval
       clearInterval(timerInterval);
       quizOver();
-    }
+		}
   }, 1000);
 }
 
@@ -73,7 +81,7 @@ function getNewQuestion() {
 	currentQuestion = questionIndex;
 	questionText.innerHTML = currentQuestion.q;
 	const index1 = availableQuestions.indexOf(questionIndex);
-	// ------------------------------Ensures we don't repeat a question, by removing the question from the available array in that specific quiz taking event.
+	// -----------------Ensures we don't repeat a question, by removing the question from the available array in that specific quiz taking event.
 	availableQuestions.splice(index1, 1);
 
 	// ---------------Pushes the assigned question
