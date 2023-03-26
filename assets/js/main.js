@@ -188,14 +188,14 @@ function quizResult () {
 
 // --------------- Buttons section
 
-function resetQuiz() {
-	questionCounter = 0;
-	correctAnswers = 0;
-	// secondsLeft = 60;
-	// timeLeft = 60
-	clearTimeout(secondsLeft);
+// function resetQuiz() {
+// 	questionCounter = 0;
+// 	correctAnswers = 0;
+// 	// secondsLeft = 60;
+// 	// timeLeft = 60
+// 	clearTimeout(secondsLeft);
 
-}
+// }
 
 function tryAgainQuiz() {
 	resultBox.classList.add("hide");
@@ -204,56 +204,121 @@ function tryAgainQuiz() {
 	startQuiz();
 }
 
+// const reset = document.querySelector("#reset");
+
+// reset.click(function () {
+// 	clearTimeout(timerInterval);
+// 	timerInterval = timerInterval = setInterval(function() {
+// 		if (secondsLeft > 1) {
+// 			timeEl.textContent = secondsLeft + " seconds remaining";
+// 			secondsLeft--;
+// 		} else if
+// 			(secondsLeft === 1) {
+// 			timeEl.textContent = secondsLeft + " second remaining";
+// 			secondsLeft--;
+// 		} else {
+// 			secondsLeft.textContent = '';
+//       // Stops execution of action at set interval
+//       clearInterval(timerInterval);
+//       quizOver();
+// 		}
+//   }, 1000);
+// });
+
 function goHome() {
 	resultBox.classList.add("hide");
 	homeBox.classList.remove("hide");
-	resetQuiz();
+	// resetQuiz();
 }
 
+// function reset() {
+// 	clearTimeout(timerInterval);
+// 	timerInterval = timerInterval = setInterval(function() {
+// 		if (secondsLeft > 1) {
+// 			timeEl.textContent = secondsLeft + " seconds remaining";
+// 			secondsLeft--;
+// 		} else if
+// 			(secondsLeft === 1) {
+// 			timeEl.textContent = secondsLeft + " second remaining";
+// 			secondsLeft--;
+// 		} else {
+// 			secondsLeft.textContent = '';
+//       // Stops execution of action at set interval
+//       clearInterval(timerInterval);
+//       quizOver();
+// 		}
+//   }, 
+// 	1000);
+
+
 //--------------- Submit Button and function
-var initialsInput = document.getElementById("initials");
-var scorePull = document.getElementById("pull-score");
-var saveButton = document.getElementById("save");
-// var msgDiv = document.querySelector("#msg");
-var savedInitialsSpan = document.getElementById("saved-initials");
+var initialsInput = document.getElementById("#initials");
+var scorePull = document.getElementById("#pull-score");
+var saveButton = document.getElementById("#save");
+var savedInitialsSpan = document.getElementById("#saved-initials");
 var savedScoreSpan = document.getElementById("saved-score");
+
+renderLastRegistered();
+
+function renderLastRegistered() {
+  var initials = localStorage.getItem("initials");
+  var userScore = localStorage.getItem("pull-score");
+
+  if (!initials || !userScore) {
+    return;
+  }
+	savedInitialsSpan.textContent = initials;
+	savedScoreSpan.textContent = userScore
+}
+
+saveButton.addEventListener("click", function(event) {
+	event.preventDefault();
+
+  var initials = document.querySelector("#initials").value;
+  var userScore = document.querySelector("#pull-score").value;
+
+localStorage.setItem("initials", initials);
+localStorage.setItem("userScore", userScore);
+renderLastRegistered();
+});
+
 
 // saveButton.addEventListener("click", function(event) {
 //   event.preventDefault();
 
-function saveLastScore() {
+// function saveLastScore() {
 
-var playerResults = {
-	initialsT: initialsInput,
-  score: scorePull,
-};
-localStorage.setItem("playerResults", JSON.stringify(playerResults));
-}
+// var playerResults = {
+// 	initialsT: initialsInput,
+//   score: scorePull,
+// };
+// localStorage.setItem("playerResults", JSON.stringify(playerResults));
+// }
 
-function renderLastScore() {
-  // Use JSON.parse() to convert text to JavaScript object
-  var lastScore = JSON.parse(localStorage.getItem("playerResults"));
-  // Check if data is returned, if not exit out of the function
-  if (lastScore !== null) {
-  document.getElementById("saved-name").innerHTML = lastScore.initialsT;
-  document.getElementById("saved-grade").innerHTML = lastScore.score;
-  } else {
-    return;
-  }
-}
+// function renderLastScore() {
+//   // Use JSON.parse() to convert text to JavaScript object
+//   var lastScore = JSON.parse(localStorage.getItem("playerResults"));
+//   // Check if data is returned, if not exit out of the function
+//   if (lastScore !== null) {
+//   document.getElementById("saved-name").innerHTML = lastScore.initialsT;
+//   document.getElementById("saved-grade").innerHTML = lastScore.score;
+//   } else {
+//     return;
+//   }
+// }
 
-saveButton.addEventListener("click", function(event) {
-event.preventDefault();
-saveLastScore();
-renderLastScore();
-});
+// saveButton.addEventListener("click", function(event) {
+// event.preventDefault();
+// saveLastScore();
+// renderLastScore();
+// });
 
-// The init() function fires when the page is loaded 
-function init() {
-  // When the init function is executed, the code inside renderLastGrade function will also execute
-  renderLastScore();
-}
-init();
+// // The init() function fires when the page is loaded 
+// function init() {
+//   // When the init function is executed, the code inside renderLastGrade function will also execute
+//   renderLastScore();
+// }
+// init();
 
 
 // var counterScore = document.querySelector("#counter");
@@ -313,5 +378,4 @@ function goHome2() {
 // }
 
 window.onload = function () {
-	homeBox.querySelector(".total-questions").innerHTML = quiz.length;
-}
+	homeBox.querySelector(".total-questions").innerHTML = quiz.length;}
