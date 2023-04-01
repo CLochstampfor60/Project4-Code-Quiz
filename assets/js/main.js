@@ -24,7 +24,7 @@ var timeEl = document.querySelector(".time");
 
 // Selects element by id
 var mainEl = document.getElementById("main");
-var secondsLeft = 30;
+var secondsLeft = 5;
 
 quizTime.textContent = secondsLeft + " seconds."
 
@@ -200,8 +200,19 @@ function quizResult () {
 function tryAgainQuiz() {
 	resultBox.classList.add("hide");
 	quizBox.classList.remove("hide");
-	resetQuiz();
+	resetQuiz(
+		// reset to initial value.
+	);
 	startQuiz();
+}
+
+function resetQuiz(){
+	 questionCounter = 0;
+ availableQuestions = [];
+ availableOptions = [];
+ correctAnswers = 0;
+ wrongAnswers = 0;
+secondsLeft = 5;
 }
 
 // const reset = document.querySelector("#reset");
@@ -252,10 +263,10 @@ function goHome() {
 
 
 //--------------- Submit Button and function
-var initialsInput = document.getElementById("#initials");
-var scorePull = document.getElementById("#pull-score");
-var saveButton = document.getElementById("#save");
-var savedInitialsSpan = document.getElementById("#saved-initials");
+var initialsInput = document.getElementById("initials");
+var scorePull = document.getElementById("pull-score");
+var saveButton = document.getElementById("save");
+var savedInitialsSpan = document.getElementById("saved-initials");
 var savedScoreSpan = document.getElementById("saved-score");
 
 renderLastRegistered();
@@ -275,8 +286,8 @@ saveButton.addEventListener("click", function(event) {
 	event.preventDefault();
 
   var initials = document.querySelector("#initials").value;
-  var userScore = document.querySelector("#pull-score").value;
-
+  var userScore = document.querySelector(".total-score").textContent;
+console.log(initials, userScore)
 localStorage.setItem("initials", initials);
 localStorage.setItem("userScore", userScore);
 renderLastRegistered();
